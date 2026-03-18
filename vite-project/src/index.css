@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+ @plugin "daisyui" {
+  themes: all;
+}
+/* الخط الافتراضي لكل الجسم */
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* مثال للخط الإنجليزي */
+.font-amarna {
+  font-family: 'Amarna', cursive;
+}
+
+/* مثال للخط العربي */
+.font-arabic {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+
+
+
