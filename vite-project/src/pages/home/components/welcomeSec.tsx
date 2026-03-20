@@ -1,0 +1,50 @@
+import React from 'react'
+
+import Img from "../../../assets/ab.fcda2469b98ffc37a148.png"
+import Logo from "../../../assets/movidlogo.png"
+import { BsArrowRight } from "react-icons/bs";
+import { FaFacebookMessenger } from "react-icons/fa";
+
+
+import './home.css';
+import PrimaryButton from '../../../components/MainButton';
+
+const WelcomeSec = () => {
+    return (
+        <div className='w-full flex flex-col lg:flex-row text-gray-500 px-28 py-8 gap-8 items-center font-bold'>
+
+            <div className=" relative w-1/2">
+                <img src={Img} alt="" />
+                <img className=' absolute right-20 top-40 logo  ' src={Logo} alt="" />
+            </div>
+
+            <div className="p-5 flex flex-col gap-12 w-1/2">
+                <h3 className='text-5xl flex flex-col text-primary'>Welcome to <span className='text-red-500'> Echooling LMS Platform</span></h3>
+
+                <p>Education is both the act of teaching knowledge to others and
+                    the act of receiving knowledge from someone else.</p>
+
+                <p className="">Have questions? <a className='text-red-500 border-b-2 border-b-red-500' href=""> Get Free Guide </a></p>
+                <div className="border-b w-full"></div>
+
+                <p>Education also refers to the knowledge received through schooling instruction
+                    and to the institution of teaching as a whole. The main purpose of education
+                    is the integral development of a person.</p>
+                    <div className="flex gap-10 w-fit ">
+                       <PrimaryButton>
+                        learn more
+                       </PrimaryButton>
+                        <div className="flex gap-5 text-primary">
+                            <span ><FaFacebookMessenger className='text-5xl'/></span>
+                            <div className="flex flex-col gap-3">
+                                <p className='text-xs'>Get Support</p>
+                                <a className='text-2xl hover:text-red-500'  href="#">support@react.com</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    )
+}
+
+export default WelcomeSec
