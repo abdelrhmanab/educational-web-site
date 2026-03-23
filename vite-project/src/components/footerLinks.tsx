@@ -14,7 +14,7 @@ type LinksType = {
 
 const FooterLinks = ({links}:LinksType) => {
   
-  console.log(links);
+  
   
     return (
 

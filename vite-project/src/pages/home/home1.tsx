@@ -3,6 +3,10 @@ import HeroSec from './components/HeroSec'
 import CoursesStudent from './components/coursesStudent'
 import WelcomeSec from './components/welcomeSec'
 import CampusLive from './components/CampusLive'
+import PopularCourses from './components/PopularCourses'
+import UpcomingEvents from './components/UpcomingEvents'
+import StudentSaying from './components/StudentSaying'
+import SchoolNews from './components/SchoolNews'
 
 const Home1 = () => {
   return (<>
@@ -33,9 +37,44 @@ const Home1 = () => {
 
       {/* --------------------------   CAMPUS LIFE SEC --------------- */}
       <section>
-        <CampusLive/>
+        <CampusLive />
       </section>
       {/* --------------------------   CAMPUS LIFE SEC --------------- */}
+
+
+
+      {/* --------------------------   Popular Courses --------------- */}
+      <section>
+        <PopularCourses />
+      </section>
+      {/* --------------------------   Popular Courses --------------- */}
+
+
+
+      {/* --------------------------   Upcoming Events --------------- */}
+      <section>
+        <UpcomingEvents />
+      </section>
+      {/* --------------------------   Upcoming Events --------------- */}
+
+
+
+      {/* --------------------------   What our student saying --------------- */}
+
+      <section>
+        <StudentSaying />
+      </section>
+
+      {/* --------------------------   What our student saying --------------- */}
+
+
+
+      {/* --------------------------   School News --------------- */}
+      <section>
+        <SchoolNews/>
+      </section>
+      {/* --------------------------   School News --------------- */}
+
 
 
 

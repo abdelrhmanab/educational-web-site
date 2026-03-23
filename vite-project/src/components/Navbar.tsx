@@ -10,7 +10,24 @@ import type { NavItems } from '../types/navbarItem';
 
 import Logo from "../assets/logo.png"
 
+
+
+
+
+
 const Navbar = () => {
+
+    const [scrolled, setScrolled] = React.useState(false);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 400);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const [openSide, setOpenSide] = React.useState(false)
 
@@ -36,9 +53,14 @@ const Navbar = () => {
 
             {/* 🔹 CONTENT */}
             <div className="drawer-content">
-
-                <div className="py-6 lg:px-24 flex justify-between items-center navbar">
-
+                <div
+                    className={`py-6 lg:px-24 flex justify-between items-center navbar 
+                            transition-all duration-500 ease-in-out
+                            ${scrolled
+                            ? "fixed top-0 left-0 w-11/12 ml-10 bg-primary-content mt-5 rounded-4xl shadow-md py-3 z-50 opacity-100 translate-y-0"
+                            : ""
+                        }`}
+                >
                     <h1 className='w-42 lg:w-auto'>
                         <img src={Logo} alt="" />
                     </h1>
@@ -49,7 +71,8 @@ const Navbar = () => {
                     </label>
 
                     {/* 🔹 Desktop */}
-                    <div className="items-center gap-12 hidden lg:flex">
+                    <div className={`items-center gap-12 hidden lg:flex
+                        `}>
 
                         {Links.map(item => (
                             <div className="dropdown dropdown-hover" key={item.name}>

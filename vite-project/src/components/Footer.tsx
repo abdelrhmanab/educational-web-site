@@ -92,7 +92,7 @@ const Footer = () => {
           </svg>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>
-        <p className='flex'>This design is <span className='text-accent'>stolen</span> <a className='border-b' href="https://echooling-react.vercel.app/">from the Echooling React template.</a></p>
+        <p className='flex flex-col lg:flex-row'>This design is <span className='text-accent'>stolen</span> <a className='border-b' href="https://echooling-react.vercel.app/">from the Echooling React template.</a></p>
 
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <a>
