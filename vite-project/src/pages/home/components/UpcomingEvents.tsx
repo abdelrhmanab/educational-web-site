@@ -17,6 +17,7 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 import PrimaryButton from '../../../components/MainButton';
 
+import SectionContainar from '../../../features/SectionContainar';
 
 
 const eventsList = [
@@ -86,7 +87,7 @@ const UpcomingEvents = () => {
 
 
     return (
-        <div className='w-full m-auto flex flex-col bg-gray-100 items-center py-14 lg:py-24 '  >
+        <SectionContainar className=' bg-gray-100 '  >
             <TitleOfSec title='Upcoming Events' />
 
             <div className="w-full ">
@@ -125,7 +126,7 @@ const UpcomingEvents = () => {
 
                 </Swiper>
             </div>
-        </div>
+        </SectionContainar>
     )
 }
 

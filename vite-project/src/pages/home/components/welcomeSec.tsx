@@ -3,6 +3,7 @@ import React from 'react'
 import Img from "../../../assets/ab.fcda2469b98ffc37a148.png"
 import Logo from "../../../assets/movidlogo.png"
 import { FaFacebookMessenger } from "react-icons/fa";
+import SectionContainar from '../../../features/SectionContainar';
 
 
 import './home.css';
@@ -10,7 +11,7 @@ import PrimaryButton from '../../../components/MainButton';
 
 const WelcomeSec = () => {
     return (
-        <div className='w-full flex flex-col lg:flex-row text-gray-500 px-2 lg:px-28 py-2 lg:py-8 gap-8 items-center font-bold'>
+        <SectionContainar className=' lg:flex-row text-gray-500 font-bold'>
 
             <div className=" relative w-full lg:w-1/2">
                 <img src={Img} alt="" />
@@ -29,18 +30,18 @@ const WelcomeSec = () => {
                 <p>Education also refers to the knowledge received through schooling instruction
                     and to the institution of teaching as a whole. The main purpose of education
                     is the integral development of a person.</p>
-                    <div className="flex flex-col lg:flex-row gap-10 w-fit ">
-                       <PrimaryButton to='/about' text='learn more'/>
-                        <div className="flex gap-5 text-primary">
-                            <span ><FaFacebookMessenger className='text-5xl'/></span>
-                            <div className="flex flex-col gap-3">
-                                <p className='text-xs'>Get Support</p>
-                                <a className='text-2xl hover:text-red-500'  href="#">support@react.com</a>
-                            </div>
+                <div className="flex flex-col lg:flex-row gap-10 w-fit ">
+                    <PrimaryButton to='/about' text='learn more' />
+                    <div className="flex gap-5 text-primary">
+                        <span ><FaFacebookMessenger className='text-5xl' /></span>
+                        <div className="flex flex-col gap-3">
+                            <p className='text-xs'>Get Support</p>
+                            <a className='text-2xl hover:text-red-500' href="#">support@react.com</a>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
+        </SectionContainar>
     )
 }
 

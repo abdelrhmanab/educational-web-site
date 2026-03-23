@@ -13,66 +13,66 @@ const Home1 = () => {
     <div className="">
       {/* -------------------------- HERO SEC --------------- */}
 
-      <section>
+      
         <HeroSec />
-      </section>
+      
       {/* -------------------------- HERO SEC --------------- */}
 
 
       {/* -------------------------- COURSES STUDENT  --------------- */}
-      <section>
+      
         <CoursesStudent />
-      </section>
+      
       {/* -------------------------- COURSES STUDENT  --------------- */}
 
 
       {/* --------------------------   WELCOME SEC  --------------- */}
-      <section>
+      
         <WelcomeSec />
-      </section>
+      
       {/* --------------------------   WELCOME SEC  --------------- */}
 
 
 
 
       {/* --------------------------   CAMPUS LIFE SEC --------------- */}
-      <section>
+      
         <CampusLive />
-      </section>
+      
       {/* --------------------------   CAMPUS LIFE SEC --------------- */}
 
 
 
       {/* --------------------------   Popular Courses --------------- */}
-      <section>
+      
         <PopularCourses />
-      </section>
+      
       {/* --------------------------   Popular Courses --------------- */}
 
 
 
       {/* --------------------------   Upcoming Events --------------- */}
-      <section>
+      
         <UpcomingEvents />
-      </section>
+      
       {/* --------------------------   Upcoming Events --------------- */}
 
 
 
       {/* --------------------------   What our student saying --------------- */}
 
-      <section>
+      
         <StudentSaying />
-      </section>
+      
 
       {/* --------------------------   What our student saying --------------- */}
 
 
 
       {/* --------------------------   School News --------------- */}
-      <section>
+      
         <SchoolNews/>
-      </section>
+      
       {/* --------------------------   School News --------------- */}
 
 

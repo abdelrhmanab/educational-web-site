@@ -8,6 +8,7 @@ import CardImage2 from "../../../assets/2.ec9d013b7d4f44fa4112.png"
 import CardImage3 from "../../../assets/3.0cf44447da5e6fb16e49.png"
 import CardImage4 from "../../../assets/4.3d31b426e478a4d304b8.png"
 import TitleOfSec from '../../../components/titleOfSec';
+import SectionContainar from '../../../features/SectionContainar';
 
 
 const cardList = [
@@ -21,8 +22,7 @@ const cardList = [
 
 const CoursesStudent = () => {
     return (
-
-        <div className=' flex flex-col items-center py-28 gap-20 '>
+<SectionContainar>
          <TitleOfSec title='acadimy'/>
 
             <div className="flex flex-col lg:flex-row gap-5  w-10/12">
@@ -39,7 +39,7 @@ const CoursesStudent = () => {
                 })}
             </div>
 
-        </div>
+        </SectionContainar>
     )
 }
 

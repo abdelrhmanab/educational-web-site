@@ -3,6 +3,8 @@ import React from 'react'
 import CountUp from "../../../components/countUp";
 
 import TitleOfSec from '../../../components/titleOfSec';
+import SectionContainar from '../../../features/SectionContainar';
+
 
 import Image1 from "../../../assets/crse1.png";
 import Image2 from "../../../assets/corse2.png";
@@ -56,8 +58,10 @@ const popularCoursesList = [
 
 const PopularCourses = () => {
     return (
-        <div className='flex flex-col items-center  py-12 lg:py-32 px-8 w-11/12 m-auto bg-gray-50' >
+        <SectionContainar className='bg-gray-50' >
             <TitleOfSec title='Popular Courses' />
+
+            <div className="w-11/12">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-12 lg:mt-32">
                 {
                     popularCoursesList.map(item => {
@@ -112,7 +116,8 @@ const PopularCourses = () => {
                 })}
 
             </div>
-        </div>
+            </div>
+        </SectionContainar>
     )
 }
 

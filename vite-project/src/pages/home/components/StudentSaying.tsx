@@ -3,6 +3,9 @@ import TitleOfSec from '../../../components/titleOfSec'
 
 import Img from "../../../assets/studentsay.png"
 
+import SectionContainar from '../../../features/SectionContainar';
+
+
 const slides = [
     { id: 1, prev: 4, next: 2 },
     { id: 2, prev: 1, next: 3 },
@@ -14,7 +17,7 @@ const slides = [
 
 const StudentSaying = () => {
     return (
-        <div className='w-full gap-12 m-auto flex flex-col items-center py-14 lg:py-24'>
+        <SectionContainar className=''>
             <TitleOfSec title='What our student saying ' />
 
             <div className="carousel w-10/12 shadow ">
@@ -22,9 +25,9 @@ const StudentSaying = () => {
                 {slides.map(i => {
                     return (
                         <div id={`slide${i.id}`} className="carousel-item relative w-full py-10 px-5 group ">
-                            <div className="flex justify-center gap-10">
-                                <img className='w-3/12' src={Img} alt="" />
-                                <div className="flex flex-col p-5 w-7/12 gap-5">
+                            <div className="flex flex-col lg:flex-row justify-center gap-10">
+                                <img className='w-full lg:w-3/12' src={Img} alt="" />
+                                <div className="flex flex-col p-5 w-full lg:w-7/12 gap-5">
                                     <h6 className='text-2xl'><cite> Justen Case </cite></h6>
                                     <span className="italic text-gray-500">Student</span>
 
@@ -49,7 +52,7 @@ const StudentSaying = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="absolute left-10 right-10 top-1/2 ">
+                            <div className="absolute  left-10 right-10 top-1/2 ">
                                 <div className=" relative flex -translate-y-1/2 transform justify-between ">
                                     <a href={`#slide${i.prev}`}
                                         className="btn btn-xl left-0 
@@ -74,7 +77,7 @@ const StudentSaying = () => {
 
 
             </div>
-        </div>
+        </SectionContainar>
     )
 }
 
