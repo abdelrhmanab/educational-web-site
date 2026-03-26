@@ -7,6 +7,8 @@ import Home3 from './pages/home/home3'
 import MainLayout from './MainLayout'
 import Page404 from './pages/404'
 import AboutPage from './pages/about'
+import Instructors from './pages/instructor'
+import ProfilePage from './pages/profile'
 
 const App=()=> {
   
@@ -20,6 +22,8 @@ const App=()=> {
   <Route path='/home2' element={<Home2/>}/>
   <Route path='/home3' element={<Home3/>}/>
   <Route path='/about' element={<AboutPage/>}/>
+  <Route path='/instructor' element={<Instructors/>}/>
+  <Route path='/profile/:id' element={<ProfilePage/>}/>
 
 
 

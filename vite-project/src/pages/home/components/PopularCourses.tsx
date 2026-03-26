@@ -4,57 +4,18 @@ import CountUp from "../../../components/countUp";
 
 import TitleOfSec from '../../../components/titleOfSec';
 import SectionContainar from '../../../features/SectionContainar';
+import {popularCoursesList} from "../../../data/courses_List"
 
 
-import Image1 from "../../../assets/crse1.png";
-import Image2 from "../../../assets/corse2.png";
-import Image3 from "../../../assets/corse3.png";
-import Image4 from "../../../assets/corse4.png";
+
+
 
 
 import { LuUsers } from "react-icons/lu";
+
 import PrimaryButton from '../../../components/MainButton';
 
 
-
-const popularCoursesList = [
-    {
-        id: 1,
-        category: "UX Design",
-        title: "Dave conservatoire is the Entirely free online",
-        lessonsCount: 5,
-        studendsCount: 77,
-        price: 98,
-        img: Image1
-    },
-    {
-        id: 2,
-        category: "Web Development",
-        title: "Learn modern websites with React",
-        lessonsCount: 12,
-        studendsCount: 150,
-        price: 120,
-        img: Image2
-    },
-    {
-        id: 3,
-        category: "Data Science",
-        title: "Data analysis and machine learning basics",
-        lessonsCount: 10,
-        studendsCount: 95,
-        price: 140,
-        img: Image3
-    },
-    {
-        id: 4,
-        category: "Mobile App",
-        title: "Build mobile apps using Flutter",
-        lessonsCount: 8,
-        studendsCount: 110,
-        price: 105,
-        img: Image4
-    }
-];
 
 const PopularCourses = () => {
     return (

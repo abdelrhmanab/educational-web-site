@@ -33,7 +33,7 @@ const Navbar = () => {
 
     const Links: NavItems[] = [
         { name: "home", path: "/", itemList: [{ name: "Home One", path: "/" }, { name: "Home Two", path: "/home2" }, { name: "Home Three", path: "/homeThree" }] },
-        { name: "page", path: "/page", itemList: [{ name: "about", path: "/about" }, { name: "instructor", path: "/instructor" }, { name: "profile", path: "/profile" }, { name: "login", path: "/login" }, { name: "signup", path: "/signup" }] },
+        { name: "page", path: "/page", itemList: [{ name: "about", path: "/about" }, { name: "instructor", path: "/instructor" }, { name: "profile", path: "/profile/1" }, { name: "login", path: "/login" }, { name: "signup", path: "/signup" }] },
         { name: "courses", path: "/courses", itemList: [{ name: "course", path: "/course" }, { name: "courses list", path: "/courseslist" }, { name: "course rihgt sidebr", path: "/course-rihgt-sidebr" }, { name: "single course", path: "/single-course" }] },
         { name: "blog", path: "/blog", itemList: [{ name: "blog", path: "/blog" }, { name: "single blog", path: "/single-blog" }] },
     ]
@@ -61,9 +61,9 @@ const Navbar = () => {
                             : ""
                         }`}
                 >
-                    <h1 className='w-42 lg:w-auto'>
+                    <Link to={"/"} className='w-42 lg:w-auto'>
                         <img src={Logo} alt="" />
-                    </h1>
+                    </Link>
 
                     {/* ✅ زر الموبايل */}
                     <label htmlFor="my-drawer-2" className="btn  btn-ghost btn-lg lg:hidden">
