@@ -9,6 +9,8 @@ import Page404 from './pages/404'
 import AboutPage from './pages/about'
 import Instructors from './pages/instructor'
 import ProfilePage from './pages/profile'
+import LogIn from './pages/logIn'
+import SignUp from './pages/signUp'
 
 const App=()=> {
   
@@ -24,6 +26,8 @@ const App=()=> {
   <Route path='/about' element={<AboutPage/>}/>
   <Route path='/instructor' element={<Instructors/>}/>
   <Route path='/profile/:id' element={<ProfilePage/>}/>
+  <Route path='/login' element={<LogIn/>} />
+  <Route path='signup' element={<SignUp/>} />
 
 
 
