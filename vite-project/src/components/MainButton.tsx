@@ -7,13 +7,14 @@ const PrimaryButton = ({ to = "/about", text = "Read More" }) => {
       to={to}
       className="
         group inline-flex items-center gap-2
+         justify-center capitalize
         px-6 py-3 rounded-xl
        text-primary font-medium
         
         transition-all duration-300 ease-in-out
         border
         
-        hover:bg-red-600
+        hover:bg-blue-600
         hover:text-white
         hover:shadow-lg
         hover:-translate-y-1
@@ -21,7 +22,8 @@ const PrimaryButton = ({ to = "/about", text = "Read More" }) => {
         active:scale-95
         active:shadow-sm
         
-        focus:outline-none focus:ring-2 focus:ring-red-300
+        focus:outline-none focus:ring-2 focus:ring-blue-300
+        
       "
     >
       {text}

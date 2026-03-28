@@ -11,6 +11,8 @@ import Instructors from './pages/instructor'
 import ProfilePage from './pages/profile'
 import LogIn from './pages/logIn'
 import SignUp from './pages/signUp'
+import EventsPage from './pages/events/events'
+import SingleEvent from './pages/events/SingleEvent'
 
 const App=()=> {
   
@@ -28,6 +30,9 @@ const App=()=> {
   <Route path='/profile/:id' element={<ProfilePage/>}/>
   <Route path='/login' element={<LogIn/>} />
   <Route path='signup' element={<SignUp/>} />
+  <Route path='/event' element={<EventsPage/>}/>
+
+  <Route path='/event/:id' element={<SingleEvent/>} />
 
 
 

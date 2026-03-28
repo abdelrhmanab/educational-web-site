@@ -6,7 +6,6 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 
 
-import type { NavItems } from '../types/navbarItem';
 
 import Logo from "../assets/logo.png"
 
@@ -31,10 +30,10 @@ const Navbar = () => {
 
     const [openSide, setOpenSide] = React.useState(false)
 
-    const Links: NavItems[] = [
-        { name: "home", path: "/", itemList: [{ name: "Home One", path: "/" }, { name: "Home Two", path: "/home2" }, { name: "Home Three", path: "/homeThree" }] },
+    const Links = [
         { name: "page", path: "/page", itemList: [{ name: "about", path: "/about" }, { name: "instructor", path: "/instructor" }, { name: "profile", path: "/profile/1" }, { name: "login", path: "/login" }, { name: "signup", path: "/signup" }] },
-        { name: "courses", path: "/courses", itemList: [{ name: "course", path: "/course" }, { name: "courses list", path: "/courseslist" }, { name: "course rihgt sidebr", path: "/course-rihgt-sidebr" }, { name: "single course", path: "/single-course" }] },
+        { name: "courses", path: "/courses", itemList: [{ name: "course", path: "/course" }, { name: "courses list", path: "/courses" }, { name: "course rihgt sidebr", path: "/course-rihgt-sidebr" }, { name: "single course", path: "/single-course" }] },
+        { name: "events", path: "/event", itemList: [{ name: "event", path: "/event/1" }, { name: "events list", path: "/event" }, { name: "event rihgt sidebr", path: "/event-rihgt-sidebr" }, { name: "single event", path: "/single-event" }] },
         { name: "blog", path: "/blog", itemList: [{ name: "blog", path: "/blog" }, { name: "single blog", path: "/single-blog" }] },
     ]
 
@@ -61,9 +60,9 @@ const Navbar = () => {
                             : ""
                         }`}
                 >
-                    <Link to={"/"} className='w-42 lg:w-auto'>
+                    <NavLink to={"/"} className='w-42 lg:w-auto'>
                         <img src={Logo} alt="" />
-                    </Link>
+                    </NavLink>
 
                     {/* ✅ زر الموبايل */}
                     <label htmlFor="my-drawer-2" className="btn  btn-ghost btn-lg lg:hidden">

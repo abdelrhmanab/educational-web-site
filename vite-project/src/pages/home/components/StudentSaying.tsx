@@ -20,7 +20,7 @@ const StudentSaying = () => {
         <SectionContainar className=''>
             <TitleOfSec title='What our student saying ' />
 
-            <div className="carousel w-10/12 shadow ">
+            <div className="carousel w-full shadow ">
 
                 {slides.map(i => {
                     return (

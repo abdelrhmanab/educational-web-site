@@ -25,11 +25,9 @@ export default function HeroSec() {
                 spaceBetween={30}
                 effect={'fade'}
                 navigation={true}
-                pagination={{
-                    clickable: true,
-                }}
+           
                 loop={true}
-                modules={[EffectFade, Navigation, Pagination]}
+                modules={[EffectFade, Navigation]}
                 className="mySwiper h-[45vh] lg:h-auto "
             >
                 <SwiperSlide>

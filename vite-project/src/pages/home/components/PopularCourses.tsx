@@ -22,7 +22,7 @@ const PopularCourses = () => {
         <SectionContainar className='bg-gray-50' >
             <TitleOfSec title='Popular Courses' />
 
-            <div className="w-11/12">
+            <div className="w-full">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-12 lg:mt-32">
                 {
                     popularCoursesList.map(item => {

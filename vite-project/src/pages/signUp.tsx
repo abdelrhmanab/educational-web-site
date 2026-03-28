@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const SignUp = () => {
   return (
     <div className='w-full flex flex-col items-center pb-12 gap-24 bg-no-repeat bg-cover ' style={{ backgroundImage: `url(${Background})` }}>
-      <BgLinkPages />
+      <BgLinkPages title='sign up' />
 
       <div className="w flex flex-col items-center gap-8 py-10 px-24 bg-white shadow-2xl rounded-3xl">
         <h3 className='text-3xl font-bold'>Sing up</h3>
