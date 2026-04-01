@@ -13,6 +13,7 @@ import LogIn from './pages/logIn'
 import SignUp from './pages/signUp'
 import EventsPage from './pages/events/events'
 import SingleEvent from './pages/events/SingleEvent'
+import EventSidebarPage from './pages/events/eventSidebar'
 
 const App=()=> {
   
@@ -31,8 +32,8 @@ const App=()=> {
   <Route path='/login' element={<LogIn/>} />
   <Route path='signup' element={<SignUp/>} />
   <Route path='/event' element={<EventsPage/>}/>
-
   <Route path='/event/:id' element={<SingleEvent/>} />
+  <Route path='/event-rihgt-sidebar' element={<EventSidebarPage/>} />
 
 
 

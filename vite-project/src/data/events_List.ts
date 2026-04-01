@@ -1,3 +1,18 @@
+import eventImage1 from "../assets/eventImage1.jpg"
+import eventImage2 from "../assets/eventImage2.jpg"
+import eventImage3 from "../assets/eventImage3.jpg"
+import eventImage4 from "../assets/eventImage4.jpg"
+import eventImage5 from "../assets/eventImage5.jpg"
+import eventImage6 from "../assets/eventImage6.jpg"
+import eventImage7 from "../assets/eventImage7.jpg"
+import eventImage8 from "../assets/eventImage8.jpg"
+import eventImage9 from "../assets/eventImage9.jpg"
+
+
+
+
+
+
 const eventsList = [
   {
     id: 1,
@@ -9,7 +24,8 @@ const eventsList = [
     Instructor: "Penny Tool",
     TotalSlot: 250,
     BookedSlot: 50,
-    Phone: "+(624) 763 552 420"
+    Phone: "+(624) 763 552 420",
+    img: eventImage1
   },
   {
     id: 2,
@@ -21,7 +37,8 @@ const eventsList = [
     Instructor: "John Smith",
     TotalSlot: 200,
     BookedSlot: 120,
-    Phone: "+(44) 123 456 789"
+    Phone: "+(44) 123 456 789",
+    img: eventImage2
   },
   {
     id: 3,
@@ -33,7 +50,8 @@ const eventsList = [
     Instructor: "Anna Muller",
     TotalSlot: 180,
     BookedSlot: 90,
-    Phone: "+(49) 987 654 321"
+    Phone: "+(49) 987 654 321",
+    img: eventImage3
   },
   {
     id: 4,
@@ -45,7 +63,8 @@ const eventsList = [
     Instructor: "David Lee",
     TotalSlot: 300,
     BookedSlot: 200,
-    Phone: "+(1) 555 222 333"
+    Phone: "+(1) 555 222 333",
+    img: eventImage4
   },
   {
     id: 5,
@@ -57,7 +76,8 @@ const eventsList = [
     Instructor: "Michael Brown",
     TotalSlot: 220,
     BookedSlot: 150,
-    Phone: "+(1) 416 123 456"
+    Phone: "+(1) 416 123 456",
+    img: eventImage5
   },
   {
     id: 6,
@@ -69,7 +89,8 @@ const eventsList = [
     Instructor: "Olivia Wilson",
     TotalSlot: 160,
     BookedSlot: 80,
-    Phone: "+(61) 555 987 654"
+    Phone: "+(61) 555 987 654",
+    img: eventImage6
   },
   {
     id: 7,
@@ -81,7 +102,8 @@ const eventsList = [
     Instructor: "Ahmed Khan",
     TotalSlot: 210,
     BookedSlot: 130,
-    Phone: "+(971) 555 444 333"
+    Phone: "+(971) 555 444 333",
+    img: eventImage7
   },
   {
     id: 8,
@@ -93,7 +115,8 @@ const eventsList = [
     Instructor: "Yuki Tanaka",
     TotalSlot: 260,
     BookedSlot: 180,
-    Phone: "+(81) 123 456 789"
+    Phone: "+(81) 123 456 789",
+    img: eventImage8
   },
   {
     id: 9,
@@ -105,7 +128,8 @@ const eventsList = [
     Instructor: "Claire Dubois",
     TotalSlot: 190,
     BookedSlot: 100,
-    Phone: "+(33) 555 666 777"
+    Phone: "+(33) 555 666 777",
+    img: eventImage9
   },
   {
     id: 10,
@@ -117,7 +141,8 @@ const eventsList = [
     Instructor: "Liam Chen",
     TotalSlot: 240,
     BookedSlot: 160,
-    Phone: "+(65) 888 999 000"
+    Phone: "+(65) 888 999 000",
+    img: eventImage1
   },
   {
     id: 11,
@@ -129,7 +154,8 @@ const eventsList = [
     Instructor: "Emma Van Dijk",
     TotalSlot: 230,
     BookedSlot: 170,
-    Phone: "+(31) 555 222 111"
+    Phone: "+(31) 555 222 111",
+    img: eventImage2
   },
   {
     id: 12,
@@ -141,10 +167,10 @@ const eventsList = [
     Instructor: "Mohamed Ali",
     TotalSlot: 300,
     BookedSlot: 220,
-    Phone: "+(20) 100 200 300"
+    Phone: "+(20) 100 200 300",
+    img: eventImage3
   }
 ];
-
 export const findEvent = (id:number = 1) =>{
     
   const result =  eventsList.find( i => i.id === id  )

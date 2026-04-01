@@ -33,7 +33,7 @@ const Navbar = () => {
     const Links = [
         { name: "page", path: "/page", itemList: [{ name: "about", path: "/about" }, { name: "instructor", path: "/instructor" }, { name: "profile", path: "/profile/1" }, { name: "login", path: "/login" }, { name: "signup", path: "/signup" }] },
         { name: "courses", path: "/courses", itemList: [{ name: "course", path: "/course" }, { name: "courses list", path: "/courses" }, { name: "course rihgt sidebr", path: "/course-rihgt-sidebr" }, { name: "single course", path: "/single-course" }] },
-        { name: "events", path: "/event", itemList: [{ name: "event", path: "/event/1" }, { name: "events list", path: "/event" }, { name: "event rihgt sidebr", path: "/event-rihgt-sidebr" }, { name: "single event", path: "/single-event" }] },
+        { name: "events", path: "/event", itemList: [{ name: "event", path: "/event/1" }, { name: "events list", path: "/event" }, { name: "event rihgt sidebr", path: "/event-rihgt-sidebar" }] },
         { name: "blog", path: "/blog", itemList: [{ name: "blog", path: "/blog" }, { name: "single blog", path: "/single-blog" }] },
     ]
 
