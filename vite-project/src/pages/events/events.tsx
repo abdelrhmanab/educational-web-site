@@ -16,7 +16,7 @@ const EventsPage = () => {
 
             <div className="w-full bg-gray-100 flex flex-col gap-24 px-20 py-24 ">
 
-                <div className="flex w-full justify-between py-5">
+                <div className="flex flex-col lg:flex-row w-full justify-between py-5">
                     <p className=" text-secondary text-2xl">We found {eventsList.length} events available for you</p>
                     <select className=" select select-lg">
                         <option>Event Type: All</option>
@@ -44,7 +44,13 @@ const EventsPage = () => {
                         <Link className='text-3xl hover:text-primary transition duration-500' to={`/event/${i.id}`}>{i.title}</Link>
                     </div>
                     <div className="text-secondary text-2xl flex items-center gap-2"><IoLocationOutline/> {i.location}</div>
-                        <Link className='text-xl flex items-center justify-center gap-2 hover:bg-sky-500 hover:text-white transition duration-500 uppercase border-2 text-center p-2 w-11/12 rounded-2xl' to={`/event/${i.id}`}>get ticket <FaArrowRight/> </Link>
+                        <Link className='text-xl flex
+                         items-center justify-center
+                          gap-2 hover:bg-sky-500
+                           hover:text-white transition
+                            duration-500 uppercase border-2
+                             text-center p-2 w-11/12 rounded-2xl' 
+                             to={`/event/${i.id}`}>get ticket <FaArrowRight/> </Link>
 
                     </div>
                 )
