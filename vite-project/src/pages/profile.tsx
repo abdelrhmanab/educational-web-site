@@ -17,7 +17,7 @@ import { ImFacebook } from "react-icons/im";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Page404 from './404';
-import TeacherCourses from '../components/TeacherCourses';
+import TeacherCourses from '../features/profile/TeacherCourses';
 
 
 const countUpList = [

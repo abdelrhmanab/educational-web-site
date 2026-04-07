@@ -3,7 +3,7 @@ import TitleOfSec from '../../../components/titleOfSec'
 
 import Img from "../../../assets/studentsay.png"
 
-import SectionContainar from '../../../features/SectionContainar';
+import SectionContainar from '../../SectionContainar';
 
 
 const slides = [

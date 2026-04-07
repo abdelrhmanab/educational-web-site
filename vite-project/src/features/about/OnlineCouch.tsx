@@ -1,9 +1,9 @@
 import React from 'react'
-import SectionContainar from '../features/SectionContainar';
+import SectionContainar from '../SectionContainar';
 
-import Icon1 from "../assets/abutacc.png"
-import Icon2 from "../assets/aboutacc2.png"
-import Icon3 from "../assets/aboutacc3.png"
+import Icon1 from "../../assets/abutacc.png"
+import Icon2 from "../../assets/aboutacc2.png"
+import Icon3 from "../../assets/aboutacc3.png"
 import { Link } from 'react-router-dom';
 
 import { FaArrowRight } from "react-icons/fa6";

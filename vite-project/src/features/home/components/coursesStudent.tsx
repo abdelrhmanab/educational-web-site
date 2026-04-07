@@ -8,7 +8,7 @@ import CardImage2 from "../../../assets/2.ec9d013b7d4f44fa4112.png"
 import CardImage3 from "../../../assets/3.0cf44447da5e6fb16e49.png"
 import CardImage4 from "../../../assets/4.3d31b426e478a4d304b8.png"
 import TitleOfSec from '../../../components/titleOfSec';
-import SectionContainar from '../../../features/SectionContainar';
+import SectionContainar from '../../SectionContainar';
 
 
 const cardList = [
@@ -22,8 +22,8 @@ const cardList = [
 
 const CoursesStudent = () => {
     return (
-<SectionContainar>
-         <TitleOfSec title='acadimy'/>
+        <SectionContainar>
+            <TitleOfSec title='acadimy' />
 
             <div className="flex flex-col lg:flex-row gap-5  w-10/12">
                 {cardList.map(item => {
@@ -31,7 +31,7 @@ const CoursesStudent = () => {
                         <img src={item.img} className='w-full h-full object-contain ' alt="" />
                         <div className=" group absolute top-0 left-0 h-full w-full bg-black/5 hover:bg-black transition-colors duration-500 flex flex-col items-start justify-end p-5 text-white font-bold">
                             <h4 className='text-2xl'>{item.title}</h4>
-                            <p className=' flex gap-2 items-center group-hover:text-gray-200'>{item.body} <BsArrowRight/></p>
+                            <p className=' flex gap-2 items-center group-hover:text-gray-200'>{item.body} <BsArrowRight /></p>
                         </div>
 
                     </div>)

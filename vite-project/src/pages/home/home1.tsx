@@ -1,78 +1,78 @@
 import React from 'react'
-import HeroSec from './components/HeroSec'
-import CoursesStudent from './components/coursesStudent'
-import WelcomeSec from './components/welcomeSec'
-import CampusLive from './components/CampusLive'
-import PopularCourses from './components/PopularCourses'
-import UpcomingEvents from './components/UpcomingEvents'
-import StudentSaying from './components/StudentSaying'
-import SchoolNews from './components/SchoolNews'
+import HeroSec from '../../features/home/components/HeroSec'
+import CoursesStudent from '../../features/home/components/coursesStudent'
+import WelcomeSec from '../../features/home/components/welcomeSec'
+import CampusLive from '../../features/home/components/CampusLive'
+import PopularCourses from '../../features/home/components/PopularCourses'
+import UpcomingEvents from '../../features/home/components/UpcomingEvents'
+import StudentSaying from '../../features/home/components/StudentSaying'
+import SchoolNews from '../../features/home/components/SchoolNews'
 
 const Home1 = () => {
   return (<>
     <div className="">
       {/* -------------------------- HERO SEC --------------- */}
 
-      
-        <HeroSec />
-      
+
+      <HeroSec />
+
       {/* -------------------------- HERO SEC --------------- */}
 
 
       {/* -------------------------- COURSES STUDENT  --------------- */}
-      
-        <CoursesStudent />
-      
+
+      <CoursesStudent />
+
       {/* -------------------------- COURSES STUDENT  --------------- */}
 
 
       {/* --------------------------   WELCOME SEC  --------------- */}
-      
-        <WelcomeSec />
-      
+
+      <WelcomeSec />
+
       {/* --------------------------   WELCOME SEC  --------------- */}
 
 
 
 
       {/* --------------------------   CAMPUS LIFE SEC --------------- */}
-      
-        <CampusLive />
-      
+
+      <CampusLive />
+
       {/* --------------------------   CAMPUS LIFE SEC --------------- */}
 
 
 
       {/* --------------------------   Popular Courses --------------- */}
-      
-        <PopularCourses />
-      
+
+      <PopularCourses />
+
       {/* --------------------------   Popular Courses --------------- */}
 
 
 
       {/* --------------------------   Upcoming Events --------------- */}
-      
-        <UpcomingEvents />
-      
+
+      <UpcomingEvents />
+
       {/* --------------------------   Upcoming Events --------------- */}
 
 
 
       {/* --------------------------   What our student saying --------------- */}
 
-      
-        <StudentSaying />
-      
+
+      <StudentSaying />
+
 
       {/* --------------------------   What our student saying --------------- */}
 
 
 
       {/* --------------------------   School News --------------- */}
-      
-        <SchoolNews/>
-      
+
+      <SchoolNews />
+
       {/* --------------------------   School News --------------- */}
 
 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Avatat1 from "../assets/AttendeeList1.png"
-import Avatat2 from "../assets/AttendeeList2.png"
-import Avatat3 from "../assets/AttendeeList3.png"
-import Avatat4 from "../assets/AttendeeList4.png"
+import Avatat1 from "../../assets/AttendeeList1.png"
+import Avatat2 from "../../assets/AttendeeList2.png"
+import Avatat3 from "../../assets/AttendeeList3.png"
+import Avatat4 from "../../assets/AttendeeList4.png"
 
 
 const attendeeList = [

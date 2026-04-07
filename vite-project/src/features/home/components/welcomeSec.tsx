@@ -3,7 +3,7 @@ import React from 'react'
 import Img from "../../../assets/ab.fcda2469b98ffc37a148.png"
 import Logo from "../../../assets/movidlogo.png"
 import { FaFacebookMessenger } from "react-icons/fa";
-import SectionContainar from '../../../features/SectionContainar';
+import SectionContainar from '../../SectionContainar';
 
 
 import './home.css';

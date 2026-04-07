@@ -1,10 +1,10 @@
 import React from 'react'
-import SectionContainar from '../features/SectionContainar'
-import CountUp from "./countUp";
+import CountUp from "../../components/countUp";
+import SectionContainar from '../SectionContainar';
 
 
-import Avtarslide from "../assets/aboutslide1.png"
-import Icon from "../assets/abuticoon.png"
+import Avtarslide from "../../assets/aboutslide1.png"
+import Icon from "../../assets/abuticoon.png"
 
 
 // Import Swiper React components
@@ -15,7 +15,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import 'swiper/css/free-mode';
 
-import "./style.css"
+import "../../components/style.css"
 
 import { FreeMode, Pagination } from "swiper/modules";
 

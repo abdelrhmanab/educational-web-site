@@ -8,11 +8,12 @@ import { FaXTwitter } from "react-icons/fa6";
 import { LuShare2 } from "react-icons/lu";
 
 
-import PrimaryButton from './MainButton';
+import PrimaryButton from '../../components/MainButton';
 
 import HoverPopover from './ShareEvent';
 
 import type { EventType } from "./types";
+import DetailsRow from './DitailRow';
 
 type Prop = {
     event: EventType
@@ -27,7 +28,7 @@ const EventSideBar = ({ event }: Prop) => {
 
         <div className="lg:col-span-4 flex flex-col gap-8 px-10">
 
-            <div className="w-full bg-white py-4 px-4 lg:p-10 rounded-xl  shadow-2xl flex flex-col gap-8">
+            <div className="w-full bg-white py-4 px-4 lg:p-10 rounded-xl  shadow-lg flex flex-col gap-8">
 
 
                 <div className="w-full flex lg:text-2xl items-center justify-between border-b border-gray-300 p-2">
@@ -37,23 +38,14 @@ const EventSideBar = ({ event }: Prop) => {
 
 
 
+                <DetailsRow label='Instructor' value={event.Instructor} />
 
-                <div className="w-full flex lg:text-2xl items-center justify-between border-b border-gray-300 p-2">
-                    <p className="flex">  Instructor :</p>
-                    <p className="">{event.Instructor} </p>
-                </div>
+                <DetailsRow label='Total Slot' value={event.TotalSlot} />
 
-
-                <div className="w-full flex lg:text-2xl items-center justify-between border-b border-gray-300 p-2">
-                    <p className="flex">  Total Slot :</p>
-                    <p className="">{event.TotalSlot}</p>
-                </div>
+                <DetailsRow label='Booked Slot' value={event.BookedSlot} />
 
 
-                <div className="w-full flex lg:text-2xl items-center justify-between border-b border-gray-300 p-2">
-                    <p className="flex">  Booked Slot :</p>
-                    <p className="">{event.BookedSlot} </p>
-                </div>
+
 
                 <PrimaryButton text='join Now !' to={`/event/:${event.id}`} />
 
@@ -80,31 +72,17 @@ const EventSideBar = ({ event }: Prop) => {
 
             <div className="w-full bg-white py-4 px-4 lg:p-10 rounded-xl  shadow-2xl flex flex-col gap-8">
 
-                <p className="flex flex-col gap-2 text-lg ">
-                    <span className='font-bold'>Date :</span>
-                    {data.month} , {data.year}
-                </p>
+                <h6 className='text-2xl text-primary w-fit  '><strong>Event information </strong>: </h6>
 
-                <p className="flex flex-col gap-2 text-lg ">
-                    <span className='font-bold'>Time :</span>
-                    {data.opened}
-                </p>
+                <DetailsRow label='Date' value={`${data.month} , ${data.year}`} />
 
-                <p className="flex flex-col gap-2 text-lg ">
-                    <span className='font-bold'>Venue :</span>
-                    {event.location}
-                </p>
+                <DetailsRow label='Time' value={data.opened} />
 
-                <p className="flex flex-col gap-2 text-lg ">
-                    <span className='font-bold'>Phone :</span>
-                    {event.Phone}
-                </p>
+                <DetailsRow label='Venue' value={event.location} />
 
-
-
-
-
+                <DetailsRow label='Phone' value={event.Phone} />
             </div>
+
 
         </div>
 

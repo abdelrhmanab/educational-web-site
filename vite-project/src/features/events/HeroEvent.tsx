@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import HeroBg from "../assets/eventsbackground7.jpg"
+import HeroBg from "../../assets/eventsbackground7.jpg"
 
 import { IoCalendarClearOutline } from "react-icons/io5";
 import { IoMdTime } from "react-icons/io";

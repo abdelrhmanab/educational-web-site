@@ -1,9 +1,10 @@
 import React from 'react'
 
-import {popularCoursesList} from "../data/courses_List"
+import {popularCoursesList} from "../../data/courses_List"
 import { LuUsers } from "react-icons/lu";
 import { FaFileAlt } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,7 +15,7 @@ const TeacherCourses = () => {
          {
                           popularCoursesList.map(item => {
                               return (
-                                  <div key={item.id} className='flex flex-col relative items-center bg-white shadow'>
+                                  <Link to={`/course/${item.id}`} key={item.id} className='flex flex-col relative items-center bg-white shadow'>
                                       <img src={item.img} alt="" className="w-full" />
                                       <div className=" absolute top-3 right-3 p-2 rounded-2xl text-sm font-bold text-white bg-sky-500">{item.category}</div>
                                       <div className="flex flex-col items-center  py-5 px-5 gap-3 ">
@@ -36,7 +37,7 @@ const TeacherCourses = () => {
                                           </ul>
                                       </div>
       
-                                  </div>
+                                  </Link>
                               )
                           })
                       }

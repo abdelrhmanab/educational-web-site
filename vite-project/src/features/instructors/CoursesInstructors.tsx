@@ -1,12 +1,12 @@
 import React from 'react'
-import SectionContainar from '../features/SectionContainar';
+import SectionContainar from '../SectionContainar';
 
-import Avatar1 from "../assets/avatar1.jpg"
-import Avatar2 from "../assets/avatar2.jpg"
-import Avatar3 from "../assets/avatar3.jfif"
-import Avatar4 from "../assets/avatar4.jpg"
-import Avatar5 from "../assets/avatar5.jpg"
-import Avatar6 from "../assets/avatar6.jpg"
+import Avatar1 from "../../assets/avatar1.jpg"
+import Avatar2 from "../../assets/avatar2.jpg"
+import Avatar3 from "../../assets/avatar3.jfif"
+import Avatar4 from "../../assets/avatar4.jpg"
+import Avatar5 from "../../assets/avatar5.jpg"
+import Avatar6 from "../../assets/avatar6.jpg"
 
 const instructors = [
     {

@@ -3,15 +3,14 @@ import React from 'react'
 
 // import { useLocation } from 'react-router-dom'
 import BgLinkPages from '../components/bgLinkPages';
-import WelcomeSec from './home/components/welcomeSec';
-import OnlineCouch from '../components/OnlineCouch';
-import CoursesInstructors from '../components/CoursesInstructors';
-import StudentFeedBack from '../components/StudentFeedBack';
-import FreeCoures from '../components/FreeCoures';
+import WelcomeSec from '../features/home/components/welcomeSec';
+import OnlineCouch from '../features/about/OnlineCouch';
+import StudentFeedBack from '../features/about/StudentFeedBack';
+import FreeCoures from '../features/about/FreeCourses';
+import CoursesInstructors from '../features/instructors/CoursesInstructors';
 
 const AboutPage = () => {
-  // const loc = useLocation
-  // console.log(loc.pathname);
+ 
 
   return (
     <div className='w-full'>
@@ -46,7 +45,7 @@ const AboutPage = () => {
       {/* -------------------------- Free Courses --------------- */}
 
 
-    
+
 
 
     </div>

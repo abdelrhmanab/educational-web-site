@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeroBg from "../assets/course-bannerbackGround.jpg"
+import HeroBg from "../../assets/course-bannerbackGround.jpg"
 
 import { IoCalendarClearOutline } from "react-icons/io5";
 import { IoMdTime } from "react-icons/io";

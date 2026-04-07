@@ -91,9 +91,10 @@ const coursesList = [
     price: 98,
     img: CourseImage1,
     instructor: "John Smith",
-    avatar: Avatar1, 
+    avatar: Avatar1,
     review: 4.5,
-    duration: "2 Weeks"
+    duration: "2 Weeks",
+    language: "English"
   },
   {
     id: 2,
@@ -104,9 +105,10 @@ const coursesList = [
     price: 120,
     img: CourseImage2,
     instructor: "Emma Brown",
-    avatar: Avatar2, 
+    avatar: Avatar2,
     review: 4.7,
-    duration: "4 Weeks"
+    duration: "4 Weeks",
+    language: "English"
   },
   {
     id: 3,
@@ -117,9 +119,10 @@ const coursesList = [
     price: 150,
     img: CourseImage3,
     instructor: "Michael Lee",
-    avatar: Avatar2, 
+    avatar: Avatar2,
     review: 4.8,
-    duration: "5 Weeks"
+    duration: "5 Weeks",
+    language: "English"
   },
   {
     id: 4,
@@ -131,7 +134,8 @@ const coursesList = [
     img: CourseImage4,
     instructor: "David Wilson",
     review: 4.9,
-    duration: "6 Weeks"
+    duration: "6 Weeks",
+    language: "English"
   },
   {
     id: 5,
@@ -143,7 +147,8 @@ const coursesList = [
     img: CourseImage5,
     instructor: "Sophia Taylor",
     review: 4.6,
-    duration: "4 Weeks"
+    duration: "4 Weeks",
+    language: "English"
   },
   {
     id: 6,
@@ -155,7 +160,8 @@ const coursesList = [
     img: CourseImage6,
     instructor: "James Anderson",
     review: 4.4,
-    duration: "3 Weeks"
+    duration: "3 Weeks",
+    language: "English"
   },
   {
     id: 7,
@@ -167,7 +173,8 @@ const coursesList = [
     img: CourseImage7,
     instructor: "Olivia Martin",
     review: 4.9,
-    duration: "8 Weeks"
+    duration: "8 Weeks",
+    language: "English"
   },
   {
     id: 8,
@@ -179,7 +186,8 @@ const coursesList = [
     img: CourseImage8,
     instructor: "William Clark",
     review: 4.3,
-    duration: "2 Weeks"
+    duration: "2 Weeks",
+    language: "English"
   },
   {
     id: 9,
@@ -191,7 +199,8 @@ const coursesList = [
     img: CourseImage9,
     instructor: "Ava Rodriguez",
     review: 4.7,
-    duration: "5 Weeks"
+    duration: "5 Weeks",
+    language: "English"
   },
   {
     id: 10,
@@ -203,7 +212,8 @@ const coursesList = [
     img: CourseImage1,
     instructor: "Daniel White",
     review: 4.5,
-    duration: "3 Weeks"
+    duration: "3 Weeks",
+    language: "English"
   },
   {
     id: 11,
@@ -215,7 +225,8 @@ const coursesList = [
     img: CourseImage2,
     instructor: "Sophia Green",
     review: 4.6,
-    duration: "4 Weeks"
+    duration: "4 Weeks",
+    language: "English"
   },
   {
     id: 12,
@@ -227,10 +238,10 @@ const coursesList = [
     img: CourseImage3,
     instructor: "Liam Scott",
     review: 4.4,
-    duration: "3 Weeks"
+    duration: "3 Weeks",
+    language: "English"
   }
 ];
-
 
 export const findCourse = (id:number = 1) =>{
     

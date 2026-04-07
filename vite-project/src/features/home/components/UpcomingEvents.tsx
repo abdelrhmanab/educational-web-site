@@ -18,9 +18,9 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import PrimaryButton from '../../../components/MainButton';
 import "./home.css"
 
-import SectionContainar from '../../../features/SectionContainar';
+import SectionContainar from '../../SectionContainar';
 
-import {popularEvents} from '../../../data/events_List';
+import { popularEvents } from '../../../data/events_List';
 
 
 const UpcomingEvents = () => {
@@ -32,11 +32,11 @@ const UpcomingEvents = () => {
 
             <div className="w-full ">
                 <Swiper
-  breakpoints={{
-    320: { slidesPerView: 1 },   // موبايل صغير
-    640: { slidesPerView: 2 },   // موبايل كبير / تابلت صغير
-    1024: { slidesPerView: 4 },  // تابلت كبير / لابتوب
-  }}                    spaceBetween={30}
+                    breakpoints={{
+                        320: { slidesPerView: 1 },   // موبايل صغير
+                        640: { slidesPerView: 2 },   // موبايل كبير / تابلت صغير
+                        1024: { slidesPerView: 4 },  // تابلت كبير / لابتوب
+                    }} spaceBetween={30}
                     freeMode={true}
                     pagination={{ clickable: true }}
                     modules={[FreeMode, Pagination]}
@@ -55,7 +55,7 @@ const UpcomingEvents = () => {
                                         <h5 className='text-3xl text-primary font-bold  '>{item.title}</h5>
 
                                     </div>
-                                    <p className='text-lg flex items-center gap-2'><FaLocationDot/>{item.location}</p>
+                                    <p className='text-lg flex items-center gap-2'><FaLocationDot />{item.location}</p>
                                     <PrimaryButton text='Find Out More' />
                                 </div>
                             </SwiperSlide>

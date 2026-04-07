@@ -6,8 +6,8 @@ import Page404 from '../404';
 
 
 
-import HeroEvent from '../../components/HeroEvent';
-import EventBodyContent from '../../components/EventBodyContent';
+import HeroEvent from '../../features/events/HeroEvent';
+import EventBodyContent from '../../features/events/EventBodyContent';
 
 
 

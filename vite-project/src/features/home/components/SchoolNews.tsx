@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleOfSec from '../../../components/titleOfSec'
 import { FiUser } from "react-icons/fi";
-import SectionContainar from '../../../features/SectionContainar';
+import SectionContainar from '../../SectionContainar';
 
 
 import ImagePost1 from "../../../assets/blog1p.jpg"
@@ -43,7 +43,7 @@ const postsList = [
 const SchoolNews = () => {
     return (
         <SectionContainar className=' bg-gray-50' >
-                <TitleOfSec title='Echooling News and Blogs' />
+            <TitleOfSec title='Echooling News and Blogs' />
 
             <div className="w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-12 lg:mt-32">

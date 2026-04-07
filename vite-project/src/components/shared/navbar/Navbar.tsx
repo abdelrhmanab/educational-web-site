@@ -7,7 +7,7 @@ import { IoSearch } from "react-icons/io5";
 
 
 
-import Logo from "../assets/logo.png"
+import Logo from "../../../assets/logo.png"
 
 
 

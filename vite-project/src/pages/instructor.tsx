@@ -1,7 +1,7 @@
 import React from 'react'
 import BgLinkPages from '../components/bgLinkPages'
-import InstructorsGrid from '../components/InstructorsGrid'
-import FreeCoures from '../components/FreeCoures';
+import InstructorsGrid from '../features/instructors/InstructorsGrid'
+import FreeCoures from '../features/about/FreeCourses';
 
 
 const Instructors = () => {
@@ -14,11 +14,11 @@ const Instructors = () => {
             <InstructorsGrid />
             {/* -------------------------- Instructors page --------------- */}
 
-            
-      {/* -------------------------- Free Courses --------------- */}
 
-      <FreeCoures />
-      {/* -------------------------- Free Courses --------------- */}
+            {/* -------------------------- Free Courses --------------- */}
+
+            <FreeCoures />
+            {/* -------------------------- Free Courses --------------- */}
 
 
 
