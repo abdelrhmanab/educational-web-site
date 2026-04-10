@@ -2,12 +2,13 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
 
 
 
 import Logo from "../../../assets/logo.png"
+import DesktopNav from './DesktopNav';
+import SideBar from './SideBar';
+
 
 
 
@@ -30,12 +31,6 @@ const Navbar = () => {
 
     const [openSide, setOpenSide] = React.useState(false)
 
-    const Links = [
-        { name: "page", path: "/page", itemList: [{ name: "about", path: "/about" }, { name: "instructor", path: "/instructor" }, { name: "profile", path: "/profile/1" }, { name: "login", path: "/login" }, { name: "signup", path: "/signup" }] },
-        { name: "courses", path: "/course", itemList: [{ name: "course", path: "/course/1" }, { name: "courses list", path: "/course" }, { name: "course rihgt sidebr", path: "/course-rihgt-sidebr" }] },
-        { name: "events", path: "/event", itemList: [{ name: "event", path: "/event/1" }, { name: "events list", path: "/event" }, { name: "event rihgt sidebr", path: "/event-rihgt-sidebar" }] },
-        { name: "blog", path: "/blog", itemList: [{ name: "blog", path: "/blog" }, { name: "single blog", path: "/single-blog" }] },
-    ]
 
 
     return (
@@ -70,97 +65,13 @@ const Navbar = () => {
                     </label>
 
                     {/* 🔹 Desktop */}
-                    <div className={`items-center gap-12 hidden lg:flex
-                        `}>
-
-                        {Links.map(item => (
-                            <div className="dropdown dropdown-hover" key={item.name}>
-
-                                <NavLink
-                                    to={item.path}
-                                    className={({ isActive }) => isActive
-                                        ? "text-error font-bold capitalize"
-                                        : "hover:text-error transition-colors font-bold capitalize"
-                                    }
-                                >
-                                    <h3 className="text-lg m-1 flex items-center gap-3 group">
-                                        {item.name}
-                                        <IoIosArrowDown className="group-hover:rotate-180" />
-                                    </h3>
-                                </NavLink>
-
-                                <ul className="dropdown-content menu bg-base-100 rounded-box w-52 p-2 shadow-sm">
-                                    {item.itemList?.map(i => (
-                                        <li key={i.name}>
-                                            <Link className='text-lg' to={i.path}>{i.name}</Link>
-                                        </li>
-                                    ))}
-                                </ul>
-
-                            </div>
-                        ))}
-
-                        <NavLink
-                            className={({ isActive }) => isActive
-                                ? "text-error font-bold capitalize text-lg"
-                                : "hover:text-error transition-colors  text-lg font-bold capitalize"}
-                            to="/contact">Contact</NavLink>
-
-                        <div className="relative pt-1 bg-black/5 hidden lg:block">
-                            <input
-                                type="text"
-                                className="h-10 px-4 w-56 outline-primary"
-                                placeholder="search course"
-                            />
-                            <IoSearch className="absolute top-2 border-l p-1 text-3xl right-2" />
-                        </div>
-
-                    </div>
+                    <DesktopNav />
 
                 </div>
             </div>
 
             {/* 🔥 SIDEBAR */}
-            <div className="drawer-side ">
-
-                {/* overlay */}
-                <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-
-                <ul className="menu p-4 w-64 min-h-full bg-base-200">
-
-                    {Links.map((item) => (
-                        <div className="collapse collapse-arrow">
-                            <input type="radio" name="my-accordion-2" />
-                            <h3 className='collapse-title'>{item.name}</h3>
-
-                            <li className='collapse-content' key={item.name}>
-                                <div >
-
-                                    <ul>
-                                        {item.itemList?.map((i) => (
-                                            <li key={i.name}>
-                                                <Link
-                                                    onClick={() => { setOpenSide(false) }}
-
-                                                    to={i.path}>{i.name}</Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-
-                                </div>
-                            </li>
-                        </div>
-                    ))}
-
-                    <li>
-                        <Link
-                            onClick={() => { setOpenSide(false) }}
-
-                            to="/contact">Contact</Link>
-                    </li>
-
-                </ul>
-            </div>
+            <SideBar  setOpenSide={setOpenSide} />
 
         </div>)
 }

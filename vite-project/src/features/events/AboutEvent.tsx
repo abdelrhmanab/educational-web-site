@@ -26,11 +26,14 @@ const AboutEvent = () => {
                 justo donec enim diam.
             </p>
 
-            <iframe width="100%" height="641" src="https://www.youtube.com/embed/e5Hc2B50Z7c"
-                title="Education of School Intro Video for No Copyright free download" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+         <div className="w-full aspect-video">
+                <iframe
+                    className="w-full h-full rounded-xl"
+                    src="https://www.youtube.com/embed/e5Hc2B50Z7c"
+                    title="YouTube video"
+                    allowFullScreen
+                ></iframe>
+            </div>
             <p className=' lg:text-2xl text-secondary'>
                 Feel free to choose from our huge
                 selection of templates, customize

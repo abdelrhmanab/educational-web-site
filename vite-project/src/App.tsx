@@ -14,6 +14,11 @@ import SingleEvent from './pages/events/SingleEvent'
 import EventSidebarPage from './pages/events/eventSidebar'
 import CoursesPage from './pages/courses/CoursesPage'
 import SingleCoursePage from './pages/courses/SingleCourse'
+import CoursesList from './pages/courses/coursesList'
+import CoursesSidbar from './pages/courses/coursesSidbar'
+import ContactPage from './pages/ContactPage'
+import BlogPage from './pages/blog/Blog'
+import SingleBlog from './pages/blog/SingleBlog'
 
 const App = () => {
 
@@ -36,6 +41,15 @@ const App = () => {
 
         <Route path='/course' element={<CoursesPage />} />
         <Route path='/course/:id' element={<SingleCoursePage />} />
+        <Route path='/course-list' element={<CoursesList />} />
+        <Route path='/course-right-sidebar' element={<CoursesSidbar />} />
+
+
+        <Route path='/contact' element={<ContactPage />} />
+
+
+        <Route path='/blog' element={<BlogPage />} />
+        <Route path='/blog/:id' element={<SingleBlog />} />
 
 
         <Route path='*' element={<Page404 />} />
