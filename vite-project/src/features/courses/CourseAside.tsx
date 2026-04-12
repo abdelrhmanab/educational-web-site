@@ -33,7 +33,7 @@ const CourseAside = ({ course }) => {
                 <DetailsRow icon={<FaMap />} label='  Language' value={course.language} />
 
 
-                <PrimaryButton text='Start Now !' to={`/event/:${course.id}`} />
+                <PrimaryButton text='Start Now !' to={`/course/${course.id}`} />
 
                 <HoverPopover
                     content={

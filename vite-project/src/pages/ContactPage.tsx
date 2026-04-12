@@ -11,6 +11,7 @@ import Mapbg from "../assets/images/contact/map.jpg"
 import PrimaryButton from '../components/MainButton'
 
 import { FaLocationDot } from "react-icons/fa6";
+import TextInput from '../components/TextInput'
 
 
 const ContactPage = () => {
@@ -58,11 +59,14 @@ const ContactPage = () => {
                         <h2 className="text-2xl lg:text-5xl font-bold  ">Questions? <br />
                             Feel free to contact uo.</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-20">
-                            <input className='p-5 rounded-2xl text-lg bg-slate-100 focus:outline-3  outline-blue-500 focus:bg-white' type="text" placeholder='Name....' name="" id="1" />
-                            <input className='p-5 rounded-2xl text-lg bg-slate-100 focus:outline-3  outline-blue-500 focus:bg-white' type="text" placeholder='Email...' name="" id="2" />
-                            <input className='p-5 rounded-2xl text-lg bg-slate-100 focus:outline-3  outline-blue-500 focus:bg-white' type="text" placeholder='Subject' name="" id="3" />
-                            <input className='p-5 rounded-2xl text-lg bg-slate-100 focus:outline-3  outline-blue-500 focus:bg-white' type="text" placeholder='Phone' name="" id="3" />
-                            <textarea className='h-40 p-5 lg:col-span-2 text-lg bg-slate-100 focus:outline-3  outline-blue-500 focus:bg-white' name="" id="" placeholder='Magsege' />
+                            <TextInput placeHolder='Name....' />
+                            <TextInput placeHolder='Email....' />
+                            <TextInput placeHolder='Subject' />
+                            <TextInput placeHolder='Phone' />
+                            <textarea className='h-40 p-5 lg:col-span-2
+                             text-lg bg-slate-100 focus:outline-3 
+                              outline-blue-500 focus:bg-white'
+                                name="" id="" placeholder='Magsege' />
 
                         </div>
                         <PrimaryButton text='Send Massege !' to='' />
@@ -74,7 +78,7 @@ const ContactPage = () => {
                     <div className=" absolute top-1/2 left-1/2">
                         <div className="tooltip">
                             <div className="tooltip-content bg-white text-black text-2xl p-2 w-38 rounded-2xl flex items-center gap-2">
-                             <FaLocationDot className='text-pink-500'/>   New York
+                                <FaLocationDot className='text-pink-500' />   New York
                             </div>
 
                             <div className="relative flex items-center justify-center">
@@ -84,7 +88,11 @@ const ContactPage = () => {
                                 {/* الزر نفسه */}
                                 <button
 
-                                    className="relative z-10 bg-pink-500 text-2xl p-3 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition transform"
+                                    className="relative z-10
+                                     bg-pink-500 text-2xl p-3
+                                      rounded-full flex items-center
+                                       justify-center shadow-lg hover:scale-110
+                                        transition transform"
                                 >
 
                                 </button>

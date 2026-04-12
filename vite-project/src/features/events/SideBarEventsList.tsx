@@ -51,7 +51,7 @@ const SideBarEventsList = () => {
                 <Link to={"/event/3"} className='flex gap-5'>
                     <img className='w-1/4 h-32 object-cover rounded-2xl' src={PopeventImg1} alt="" />
                     <div className="flex flex-col gap-3 p-4">
-                        <h6 className='text-lg'>Ethics in AI Live Event Machines Judging.</h6>
+                        <h6 className='text-xl hover:text-primary transition duration-300'>Ethics in AI Live Event Machines Judging.</h6>
                         <p className='text-lg font-bold'>26 March, 2022</p>
                     </div>
 
@@ -60,7 +60,7 @@ const SideBarEventsList = () => {
                 <Link to={"/event/4"} className='flex gap-5'>
                     <img className='w-1/4 h-32 object-cover rounded-2xl' src={PopeventImg2} alt="" />
                     <div className="flex flex-col gap-3 p-4">
-                        <h6 className='text-lg'>The Importance Of Intrinsic Motivation.</h6>
+                        <h6  className='text-xl hover:text-primary transition duration-300'>The Importance Of Intrinsic Motivation.</h6>
                         <p className='text-lg font-bold'>10 April, 2022</p>
                     </div>
 

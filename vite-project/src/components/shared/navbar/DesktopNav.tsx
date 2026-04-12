@@ -10,44 +10,56 @@ import Links from '../../../data/links_list'
 const DesktopNav = () => {
     const [openMenu, setOpenMenu] = React.useState(null);
 
-    const handleOpenMenu = (id) => {
-        setOpenMenu((prev) => (prev === id ? null : id));
-    };
-
     return (
-        <div className="items-center gap-12 hidden lg:flex">
+        <div className="items-center h-full   hidden lg:flex">
 
             {Links.map((item) => (
-                <div key={item.id} className="relative">
+                <div
+                    key={item.id}
+                    className="py-6 relative px-8 h-full"
+                           onMouseEnter={() => setOpenMenu(item.id)}
+                    onMouseLeave={() => setOpenMenu(null)}
+                       
+                >
 
                     {/* Parent */}
                     <button
-                        onMouseEnter={() => handleOpenMenu(item.id)}
-                        className="text-lg font-bold capitalize flex items-center gap-2 hover:text-error transition"
+              className="text-lg font-bold capitalize flex items-center gap-2 hover:text-error transition"
                     >
                         {item.name}
                         <IoIosArrowDown
-                            className={`transition-transform duration-300 ${openMenu === item.id ? "rotate-180" : ""
-                                }`}
+                            className={`transition-transform duration-300 ${
+                                openMenu === item.id ? "rotate-180" : ""
+                            }`}
                         />
                     </button>
 
                     {/* Dropdown */}
-                    {openMenu === item.id && (
-                        <ul className="absolute top-full mt-2 w-52 bg-base-100 rounded-xl shadow-lg p-2 z-50">
-                            {item.itemList?.map((i) => (
-                                <li key={i.id}>
-                                    <Link
-                                        to={i.path}
-                                        className="block px-3 py-2 rounded-lg hover:bg-gray-100 transition"
-                                        onClick={() => setOpenMenu(null)}
-                                    >
-                                        {i.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    )}
+                    <ul
+                        className={`absolute top-full -left-8
+                            text-xl pl-5 py-8 w-60
+                            bg-base-100 rounded-md
+                            flex flex-col z-50
+                            transition-all duration-300
+                            
+                            ${
+                                openMenu === item.id
+                                    ? "opacity-100 translate-y-0 visible"
+                                    : "opacity-0 -translate-y-3 invisible"
+                            }
+                        `}
+                    >
+                        {item.itemList?.map((i) => (
+                            <li key={i.id}>
+                                <Link
+                                    to={i.path}
+                                    className="block px-3 py-2 rounded-lg hover:bg-gray-100 transition"
+                                >
+                                    {i.name}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             ))}
 
@@ -64,7 +76,7 @@ const DesktopNav = () => {
             </NavLink>
 
             {/* Search */}
-            <div className="relative pt-1 bg-black/5 hidden lg:block rounded-lg overflow-hidden">
+            <div className="relative pt-1 ml-18 bg-black/5 hidden lg:block rounded-lg overflow-hidden">
                 <input
                     type="text"
                     className="h-10 px-4 w-56 outline-none"

@@ -48,7 +48,7 @@ const Navbar = () => {
             {/* 🔹 CONTENT */}
             <div className="drawer-content">
                 <div
-                    className={`py-6 lg:px-24 flex justify-between items-center navbar 
+                    className={` lg:px-24 flex justify-between items-center navbar 
                             transition-all duration-500 ease-in-out
                             ${scrolled
                             ? "fixed top-0 left-0 w-11/12 ml-2  lg:ml-10 bg-primary-content mt-5 rounded-4xl shadow-md py-3 z-10 opacity-100 translate-y-0"

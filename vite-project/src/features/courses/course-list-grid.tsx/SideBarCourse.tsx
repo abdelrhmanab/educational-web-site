@@ -40,11 +40,11 @@ const SideBarCourse = () => {
         <div className="lg:col-span-4 flex flex-col items-center lg:px-4">
             <div className="w-full bg-white py-4 px-4 lg:p-10 rounded-xl divide-y divide-slate-400  shadow-lg flex flex-col gap-8">
                 <div className="flex flex-col gap-5 py-8">
-                    <h4 className='t lg:text-2xl font-bold'>Search</h4>
+                    <h4 className='text-2xl font-bold'>Search</h4>
                     <div className="relative pt-1 bg-black/5  rounded-lg overflow-hidden">
                         <input
                             type="text"
-                            className=" p-1 lg:p-4 text-sm lg:text-lg  outline-none"
+                            className="p-4  lg:text-lg  outline-none"
                             placeholder="search...."
                         />
                         <IoSearch className="absolute top-2 lg:top-6 text-primary right-2 text-lg lg:text-3xl opacity-60" />
@@ -52,7 +52,7 @@ const SideBarCourse = () => {
                 </div>
 
                 <div className="flex flex-col gap-8 py-8 ">
-                    <h4 className='t lg:text-2xl font-bold'>Filter by category</h4>
+                    <h4 className='text-2xl font-bold'>Filter by category</h4>
                     <div className="flex flex-col gap-4 text-lg">
                         {category.map(i => {
                             return (
@@ -68,7 +68,7 @@ const SideBarCourse = () => {
 
 
                 <div className="flex flex-col gap-8 py-8 ">
-                    <h4 className='t lg:text-2xl font-bold'>Skill Level</h4>
+                    <h4 className='text-2xl font-bold'>Skill Level</h4>
                     <div className="flex flex-col gap-4 text-lg">
                         {levels.map(i => {
                             return (
@@ -83,7 +83,7 @@ const SideBarCourse = () => {
 
 
                 <div className="flex flex-col gap-8 py-4 ">
-                    <h4 className='t lg:text-2xl font-bold'>Price</h4>
+                    <h4 className='text-2xl font-bold'>Price</h4>
                     <div className="flex flex-col gap-4 text-lg">
                         {pricingOptions.map(i => {
                             return (
@@ -98,21 +98,21 @@ const SideBarCourse = () => {
 
 
                 <div className="flex flex-col gap-8 py-4 ">
-                    <h4 className='t lg:text-2xl font-bold'>Popular Courses</h4>
-                    <Link to={"/event/3"} className='flex gap-5'>
+                    <h4 className='text-2xl font-bold'>Popular Courses</h4>
+                    <Link to={"/course/3"} className='flex gap-5'>
                         <img className='w-1/4 h-32 object-cover rounded-2xl' src={PopeventImg1} alt="" />
                         <div className="flex flex-col gap-3 p-4">
-                            <h6 className='text-lg'>Ethics in AI Live Event Machines Judging.</h6>
-                            <p className='text-lg font-bold'>26 March, 2022</p>
+                            <h6 className='text-xl hover:text-primary transition duration-300'>Dave conservatoire is the Entirely free online</h6>
+                            <p className='text-lg font-bold'>$72.00</p>
                         </div>
 
                     </Link>
 
-                    <Link to={"/event/4"} className='flex gap-5'>
+                    <Link to={"/course/4"} className='flex gap-5'>
                         <img className='w-1/4 h-32 object-cover rounded-2xl' src={PopeventImg2} alt="" />
                         <div className="flex flex-col gap-3 p-4">
-                            <h6 className='text-lg'>The Importance Of Intrinsic Motivation.</h6>
-                            <p className='text-lg font-bold'>10 April, 2022</p>
+                            <h6 className='text-xl hover:text-primary transition duration-300'>Strategy law and Organization foundation</h6>
+                            <p className='text-lg font-bold'>$68.00</p>
                         </div>
 
                     </Link>
@@ -120,7 +120,7 @@ const SideBarCourse = () => {
 
 
                 <div className="flex flex-col gap-8 py-8 ">
-                    <h4 className='t lg:text-2xl font-bold'>Rating</h4>
+                    <h4 className='text-2xl font-bold'>Rating</h4>
                     <div className="flex flex-col gap-4 text-lg">
 
                         {ratingOptions.map((i) => {

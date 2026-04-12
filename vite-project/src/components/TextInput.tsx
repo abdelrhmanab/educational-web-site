@@ -1,22 +1,15 @@
 type Prop = {
-  label: string;
   placeHolder: string;
-  id: string;
 };
 
-const TextInput = ({ label, placeHolder, id }: Prop) => {
+const TextInput = ({  placeHolder}: Prop) => {
   return (
-    <fieldset className="w-full flex flex-col gap-5">
-      <label htmlFor={id} className="label text-2xl">
-        {label} :
-      </label>
-      <input
-        id={id}
-        type="text"
-        className="input input-primary bg-gray-50 input-xl  p-5"
-        placeholder={placeHolder}
-      />
-    </fieldset>
+    <input className='p-5 rounded-2xl text-lg
+     bg-slate-100 focus:outline-3
+       outline-blue-500 focus:bg-white'
+        type="text" placeholder={placeHolder} 
+        name="" id="1" />
+
   );
 };
 

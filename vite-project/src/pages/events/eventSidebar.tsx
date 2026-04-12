@@ -13,7 +13,7 @@ const EventSidebarPage = () => {
             <BgLinkPages title='Event Sidebar' />
 
 
-            <div className='bg-gray-50 grid grid-cols-1 px-2 lg:px-20 py-5 lg:py-24 lg:grid-cols-12 gap-8' >
+            <div className='bg-gray-50 px-2 lg:px-20 py-5 lg:py-24  gap-8' >
                 <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-12">
                     <MainEventList />
 

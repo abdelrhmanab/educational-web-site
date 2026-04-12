@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const PrimaryButton = ({ to = "/about", text = "Read More" }) => {
+const PrimaryButton = ({ to = "/", text = "Read More" }) => {
   return (
     <Link
       to={to}
       className="
-        group inline-flex items-center gap-2
+        group flex items-center gap-2
          justify-center capitalize
-        px-6 py-3 rounded-xl
+        px-6 py-3 rounded-md
+        lg:text-2xl
        text-primary font-medium
         
         transition-all duration-300 ease-in-out
