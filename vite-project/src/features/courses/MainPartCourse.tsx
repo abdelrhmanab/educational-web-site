@@ -1,4 +1,3 @@
-import React from 'react'
 import TabSec from './TabSec'
 import { popularCoursesList } from '../../data/courses_List';
 
@@ -10,7 +9,11 @@ import { Link } from 'react-router-dom';
 
 
 
-const MainPartCourse = ({ course }) => {
+type CourseProps = {
+    course: any
+}
+
+const MainPartCourse = ({ course }: CourseProps) => {
 
 
 
@@ -32,7 +35,7 @@ const MainPartCourse = ({ course }) => {
                 <div className="grid grid-cols-1 gap-8  lg:grid-cols-2">
 
                     {
-                        popularCoursesList.slice(0,2).map(item => {
+                        popularCoursesList.slice(0, 2).map(item => {
                             return (
                                 <Link to={`/course/${item.id}`} key={item.id} className='flex flex-col relative items-center bg-white shadow'>
                                     <img src={item.img} alt="" className="w-full" />

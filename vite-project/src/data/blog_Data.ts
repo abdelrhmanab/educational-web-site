@@ -4,9 +4,42 @@ import BlogImg3 from "../assets/images/blog/blog3.jpg"
 import BlogImg4 from "../assets/images/blog/blog4.jpg"
 import Avatar from "../assets/images/blog/avatar.png"
 
+export type BlogPostType = 'image post' | 'video post' | 'text post'
 
+export type BaseBlog = {
+    id: number
+    title: string
+    writer: string
+    type: BlogPostType
+    body?: string
+    avatar?: string
+    img?: string
+    Deta?: string
+    views?: number
+    category?: string
+}
 
-const blogs_Data = [
+export type ImagePost = BaseBlog & {
+    type: 'image post'
+    body: string
+    avatar: string
+    img: string
+    Deta: string
+    views: number
+    category: string
+}
+
+export type TextPost = BaseBlog & {
+    type: 'text post'
+}
+
+export type VideoPost = BaseBlog & {
+    type: 'video post'
+}
+
+export type BlogType = ImagePost | TextPost | VideoPost
+
+const blogs_Data: BlogType[] = [
     {
         id: 1,
         title: "Why schools should continue to use Remote learning",
@@ -96,12 +129,13 @@ export const tags = [
 ];
 
 
-export const findBlog = (id:number = 1) =>{
-    
-  const result =  blogs_Data.find( i => i.id === id  )
-  
-  
-  return result};
+export const findBlog = (id: number = 1) => {
+
+    const result = blogs_Data.find(i => i.id === id)
+
+
+    return result
+};
 
 
 export default blogs_Data

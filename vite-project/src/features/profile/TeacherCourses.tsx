@@ -1,4 +1,3 @@
-import React from 'react'
 
 import {popularCoursesList} from "../../data/courses_List"
 import { LuUsers } from "react-icons/lu";

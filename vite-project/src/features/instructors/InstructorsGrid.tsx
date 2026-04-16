@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SectionContainar from '../SectionContainar'
 
 import instructorList from '../../data/instractors_List'

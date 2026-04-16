@@ -1,4 +1,4 @@
-import React from 'react'
+
 import BgLinkPages from '../../components/bgLinkPages'
 
 import eventsList from '../../data/events_List'

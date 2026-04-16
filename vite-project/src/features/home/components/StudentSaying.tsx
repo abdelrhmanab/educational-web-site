@@ -1,4 +1,4 @@
-import React from 'react'
+
 import TitleOfSec from '../../../components/titleOfSec'
 
 import Img from "../../../assets/studentsay.png"

@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import { useParams } from 'react-router-dom'
 import { findEvent } from '../../data/events_List';
@@ -14,9 +14,9 @@ import EventBodyContent from '../../features/events/EventBodyContent';
 
 
 const SingleEvent = () => {
-    const { id } = useParams()
+    const { id } = useParams<{ id?: string }>()
 
-    const event = findEvent(+id)
+    const event = id ? findEvent(+id) : undefined
 
     if (!event) {
         return (

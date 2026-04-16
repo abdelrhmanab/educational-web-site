@@ -1,6 +1,4 @@
-import React from 'react'
 import BgLinkPages from '../../components/bgLinkPages'
-import SectionContainar from '../../features/SectionContainar'
 import MainPartBlog from '../../features/blog/MainPartBlog'
 import BlogSideBar from '../../features/blog/BlogSideBar'
 

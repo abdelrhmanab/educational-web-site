@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { RiArrowRightLongFill } from "react-icons/ri";
 
 

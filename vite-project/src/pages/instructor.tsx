@@ -1,4 +1,4 @@
-import React from 'react'
+
 import BgLinkPages from '../components/bgLinkPages'
 import InstructorsGrid from '../features/instructors/InstructorsGrid'
 import FreeCoures from '../features/about/FreeCourses';

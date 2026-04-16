@@ -4,13 +4,16 @@ import { NavLink } from "react-router-dom";
 
 import Links from '../../../data/links_list'
 
+type Props = {
+  setOpenSide: (value: boolean) => void
+}
 
-const SideBar = ({  setOpenSide }) => {
-    const [openCollapse, setOpenCollapse] = React.useState(null);
+const SideBar = ({ setOpenSide }: Props) => {
+  const [openCollapse, setOpenCollapse] = React.useState<number | null>(null)
 
-    const handleToggle = (id) => {
-        setOpenCollapse((prev) => (prev === id ? null : id));
-    };
+  const handleToggle = (id: number) => {
+    setOpenCollapse((prev) => (prev === id ? null : id))
+  }
 
     return (
         <div className="drawer-side">

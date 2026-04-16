@@ -4,7 +4,11 @@ import Curriculum from './tab-content/Curriculum'
 import Reviews from './tab-content/Reviews'
 import FAQ from './tab-content/FAQ'
 
-const TabSec = ({ course }) => {
+type CourseProps = {
+    course: any
+}
+
+const TabSec = ({ course }: CourseProps) => {
     const [isActive, setIsActive] = React.useState("Description")
 
     return (
@@ -92,7 +96,7 @@ const TabSec = ({ course }) => {
                                 transition-colors duration-200
                                 ${isActive === "FAQ" ? "shadow-lg bg-white text-black" : ""}`}
                     aria-label="FAQ"
-                />    
+                />
                 <div className="tab-content">
 
                     <FAQ />

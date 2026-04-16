@@ -1,4 +1,3 @@
-import React from 'react'
 
 import Avatar1 from "../../../assets/images/courses/userrating1.jpg"
 import Avatar2 from "../../../assets/images/courses/userrating2.jpg"

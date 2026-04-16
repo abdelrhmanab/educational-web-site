@@ -1,5 +1,5 @@
-import React from 'react'
 import TextCard from './cards/TextCard'
+import type { BlogType } from '../../data/blog_Data'
 
 import UserIcon1 from "../../assets/images/blog/user1.jpg"
 import UserIcon2 from "../../assets/images/blog/user2.jpg"
@@ -30,7 +30,11 @@ const feature = [
     " Any major events taking place at home."
 ]
 
-const SingleBlogMainPart = ({ blog }) => {
+type Props = {
+    blog: BlogType
+}
+
+const SingleBlogMainPart = ({ blog }: Props) => {
     return (
         <div className="lg:col-span-8 flex flex-col gap-20 p-5">
             <p className="lg:text-2xl text-gray-500">

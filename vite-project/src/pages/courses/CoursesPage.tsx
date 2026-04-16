@@ -1,4 +1,4 @@
-import React from 'react'
+
 import BgLinkPages from '../../components/bgLinkPages'
 import SectionContainar from '../../features/SectionContainar';
 import coursesList from '../../data/courses_List';

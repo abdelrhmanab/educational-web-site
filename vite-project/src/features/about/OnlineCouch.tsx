@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SectionContainar from '../SectionContainar';
 
 import Icon1 from "../../assets/abutacc.png"

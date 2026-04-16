@@ -1,4 +1,3 @@
-import React from 'react'
 
 import CountUp from "../../../components/countUp";
 
@@ -14,12 +13,13 @@ import { popularCoursesList } from "../../../data/courses_List"
 import { LuUsers } from "react-icons/lu";
 
 import PrimaryButton from '../../../components/MainButton';
+import { Link } from "react-router-dom";
 
 
 
 const PopularCourses = () => {
     return (
-        <SectionContainar className='bg-gray-50' >
+        <SectionContainar className='bg-gray-50'   >
             <TitleOfSec title='Popular Courses' />
 
             <div className="w-full">
@@ -35,7 +35,7 @@ const PopularCourses = () => {
 
                                             <li key={item.id + 1}>{item.lessonsCount} lessons</li>
                                         </ul>
-                                        <h5 className='text-2xl pb-8 font-bold text-primary hover:text-pink-700 transition duration-500 border-b border-gray-400'>{item.title}</h5>
+                                        <Link to={`/course/${item.id}`} className='text-2xl pb-8 font-bold text-primary hover:text-pink-700 transition duration-500 border-b border-gray-400'>{item.title}</Link>
                                         {/* <div className="divider "></div> */}
                                         <ul className='flex justify-between w-full  text-[18px]'>
                                             <li key={item.id} className='flex items-center gap-2 text-gray-600 '><LuUsers /> {item.studendsCount} students</li>
@@ -50,7 +50,7 @@ const PopularCourses = () => {
                     }
 
                 </div>
-                <div className="mt-10 lg:mt-24">
+                <div className="mt-10 lg:mt-24 lg:w-1/4 m-auto">
                     <PrimaryButton to='courses' text='View all courses' />
                 </div>
 
@@ -69,7 +69,7 @@ const PopularCourses = () => {
                                         direction="up"
                                         className="text-6xl"
                                         startWhen={true} // ✅ بدل startCounting
-                                    />
+                                        onStart={undefined} onEnd={undefined}                                    />
                                 </div>
                                 <p className=' uppercase'>Enrolled Learners</p>
                             </div>

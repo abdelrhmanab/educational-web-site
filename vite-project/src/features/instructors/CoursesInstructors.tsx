@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SectionContainar from '../SectionContainar';
 
 import Avatar1 from "../../assets/avatar1.jpg"

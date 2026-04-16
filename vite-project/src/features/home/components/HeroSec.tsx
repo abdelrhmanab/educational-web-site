@@ -12,7 +12,7 @@ import herebg2 from "../../../assets/aahroimage2jpg.jpg";
 
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { EffectFade, Navigation} from 'swiper/modules';
 import ModalVideo from './ModalVedio';
 
 export default function HeroSec() {

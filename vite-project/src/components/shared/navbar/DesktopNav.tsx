@@ -8,7 +8,7 @@ import Links from '../../../data/links_list'
 
 
 const DesktopNav = () => {
-    const [openMenu, setOpenMenu] = React.useState(null);
+    const [openMenu, setOpenMenu] = React.useState<null | number>(null);
 
     return (
         <div className="items-center h-full   hidden lg:flex">

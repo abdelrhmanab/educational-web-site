@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import ImageSec from "../../../assets/sec3335f.png"
 import Cercle from "../../../assets/cercellogo.png"
@@ -27,7 +27,7 @@ const CampusLive = () => {
             <div className="flex flex-col lg:flex-row-reverse justify-between p-3 lg:px-8 lg:py-10 w-full">
                 <div className="w-full lg:w-4/12 relative">
                     <img src={ImageSec} alt="" />
-                    <img className=' absolute right-[-1.5rem] top-14' src={Cercle} alt="" />
+                    <img className=' absolute -right-6 top-14' src={Cercle} alt="" />
                 </div>
                 <div className="w-full lg:w-7/12 bg-white shadow p-5 flex flex-col gap-8 ">
                     {

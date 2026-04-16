@@ -1,4 +1,3 @@
-import React from 'react'
 
 
 
@@ -12,7 +11,7 @@ import PrimaryButton from '../../components/MainButton';
 
 import HoverPopover from './ShareEvent';
 
-import type { EventType } from "./types";
+import type { EventType } from "../../types/eventType";
 import DetailsRow from './DitailRow';
 
 type Prop = {

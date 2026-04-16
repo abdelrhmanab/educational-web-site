@@ -1,4 +1,3 @@
-import React from 'react'
 import blogs_Data from '../../data/blog_Data'
 
 
@@ -13,17 +12,15 @@ const MainPartBlog = () => {
             {blogs_Data.map(i => {
                 if (i.type === "image post") {
                     return (
-                        <ImageCard i={i} />
+                        <ImageCard key={i.id} i={i} />
                     )
                 }
 
-                else {
+                if (i.type === "text post") {
                     return (
-                        <TextCard i={i} />
+                        <TextCard key={i.id} i={i} />
                     )
                 }
-
-
             })}
 
         </div>

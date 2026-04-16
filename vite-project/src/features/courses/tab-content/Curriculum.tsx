@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { FiVideo } from "react-icons/fi";
 import { MdOutlineWatchLater } from "react-icons/md";

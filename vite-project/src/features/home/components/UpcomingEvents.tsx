@@ -1,4 +1,4 @@
-import React from 'react'
+
 import TitleOfSec from '../../../components/titleOfSec';
 
 import { FaLocationDot } from "react-icons/fa6";
@@ -56,7 +56,8 @@ const UpcomingEvents = () => {
 
                                     </div>
                                     <p className='text-lg flex items-center gap-2'><FaLocationDot />{item.location}</p>
-                                    <PrimaryButton text='Find Out More' />
+                                    
+                                    <PrimaryButton to={`/enent/${item.id}`} text='Find Out More' />
                                 </div>
                             </SwiperSlide>
                             // </div>

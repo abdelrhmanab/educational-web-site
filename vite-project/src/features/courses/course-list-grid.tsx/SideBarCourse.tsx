@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoSearch } from 'react-icons/io5'
 import { Link } from 'react-router-dom';
 import PopeventImg1 from "../../../assets/popevent3.jpg"
@@ -34,8 +33,6 @@ const ratingOptions = [
 ];
 
 const SideBarCourse = () => {
-    const [minRating, setMinRating] = React.useState(null);
-
     return (
         <div className="lg:col-span-4 flex flex-col items-center lg:px-4">
             <div className="w-full bg-white py-4 px-4 lg:p-10 rounded-xl divide-y divide-slate-400  shadow-lg flex flex-col gap-8">

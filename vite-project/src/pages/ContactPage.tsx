@@ -1,4 +1,3 @@
-import React from 'react'
 import BgLinkPages from '../components/bgLinkPages'
 import SectionContainar from '../features/SectionContainar'
 
@@ -18,7 +17,7 @@ const ContactPage = () => {
     return (
         <div className='w-full'>
             <BgLinkPages title='Contact' />
-            <SectionContainar>
+            <SectionContainar >
                 <div className="grid grid-cols-1 py-8 w-full lg:grid-cols-12">
                     <div className="lg:col-span-4 px-2 ">
                         <div className="flex flex-col  gap-16 px-5 py-20 bg-slate-50 rounded-2xl shadow-lg">

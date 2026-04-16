@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useParams } from 'react-router-dom'
 import { findBlog } from '../../data/blog_Data'
 import Page404 from '../404'
@@ -8,9 +8,9 @@ import SingleBlogMainPart from '../../features/blog/SingleBlogMainPart'
 
 function SingleBlog() {
 
-    const { id } = useParams()
+    const { id } = useParams<{ id?: string }>()
 
-    const blog = findBlog(+id)
+    const blog = id ? findBlog(+id) : undefined
     // console.log(blog);
 
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { BiSearch } from 'react-icons/bi'
 import { GrLocation } from 'react-icons/gr'
 import { IoCalendarClearOutline } from 'react-icons/io5'

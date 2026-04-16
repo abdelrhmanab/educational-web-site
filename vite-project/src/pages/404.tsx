@@ -1,4 +1,3 @@
-import React from 'react'
 
 import Img404 from "../assets/404.png"
 import PrimaryButton from '../components/MainButton'

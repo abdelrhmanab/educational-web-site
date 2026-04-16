@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useParams } from 'react-router-dom'
 import { findCourse } from '../../data/courses_List';
 import Page404 from '../404';
@@ -9,9 +7,9 @@ import CourseAside from '../../features/courses/CourseAside';
 
 
 const SingleCoursePage = () => {
-    const { id } = useParams()
+    const { id } = useParams<{ id?: string }>()
 
-    const course = findCourse(+id)
+    const course = id ? findCourse(+id) : undefined
 
     if (!course) {
         return (

@@ -1,4 +1,3 @@
-import React from 'react'
 
 import eventsList from "../../data/events_List"
 

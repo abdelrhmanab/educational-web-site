@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { BiSolidGrid } from "react-icons/bi";
 import { IoMdList } from "react-icons/io";

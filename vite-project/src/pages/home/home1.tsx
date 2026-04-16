@@ -1,4 +1,4 @@
-import React from 'react'
+
 import HeroSec from '../../features/home/components/HeroSec'
 import CoursesStudent from '../../features/home/components/coursesStudent'
 import WelcomeSec from '../../features/home/components/welcomeSec'

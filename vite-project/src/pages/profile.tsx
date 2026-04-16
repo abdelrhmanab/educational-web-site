@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import { useParams } from 'react-router-dom';
 import { findInstructor } from '../data/instractors_List';
@@ -27,10 +27,10 @@ const countUpList = [
 ]
 
 const ProfilePage = () => {
-    const { id } = useParams()
+    const { id } = useParams<{ id?: string }>()
 
 
-    const instructor = findInstructor(+id)
+    const instructor = id ? findInstructor(+id) : undefined
     // console.log(instructor);
 
     if (!instructor) {
@@ -127,7 +127,7 @@ const ProfilePage = () => {
 
 
                         {/* -------------------- SEC-3 ---------------------- */}
-                        <TeacherCourses/>
+                        <TeacherCourses />
                         {/* -------------------- SEC-3 ---------------------- */}
 
 

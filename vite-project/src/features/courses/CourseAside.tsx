@@ -1,4 +1,3 @@
-import React from 'react'
 import DetailsRow from '../events/DitailRow'
 
 import { FaUserGroup, FaXTwitter } from "react-icons/fa6";
@@ -15,7 +14,11 @@ import { LuShare2 } from 'react-icons/lu';
 
 
 
-const CourseAside = ({ course }) => {
+type CourseProps = {
+    course: any
+}
+
+const CourseAside = ({ course }: CourseProps) => {
     return (
         <div className="lg:col-span-4 flex flex-col gap-8 px-10">
             <div className="w-full bg-white py-4 px-4 lg:p-10 rounded-xl  shadow-2xl flex flex-col gap-8">
@@ -80,7 +83,7 @@ const CourseAside = ({ course }) => {
                                 href="/course"
                                 className="flex items-center justify-between text-lg py-3 px-2 rounded-lg transition-all duration-200 hover:bg-blue-50 hover:text-blue-600"
                             >
-                             {item.name} ({item.count})
+                                {item.name} ({item.count})
                             </a>
                         </li>
 

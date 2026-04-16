@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { MdArrowForward } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
@@ -19,11 +19,11 @@ const SignUp = () => {
       <div className="w flex flex-col items-center gap-8 py-10 px-24 bg-white shadow-2xl rounded-3xl">
         <h3 className='text-3xl font-bold'>Sing up</h3>
         <p className="text-lg capitalize">Already have an account? <Link className='text-sky-500' to="/signup">Log In .</Link></p>
-        <TextInput id='email' label='Email' placeHolder='Enter your email here' />
+        <TextInput  placeHolder='Enter your email here' />
 
-        <TextInput id='name' label='User Name' placeHolder='Enter your name here' />
-        <TextInput id='password' label='Password' placeHolder='Enter your password here' />
-        <TextInput id='Confirmpassword' label='Confirm Password' placeHolder='Enter your password here' />
+        <TextInput  placeHolder='Enter your name here' />
+        <TextInput  placeHolder='Enter your password here' />
+        <TextInput  placeHolder='Enter your password here' />
 
         <div className="flex w-full justify-between text-lg">
           <label htmlFor="checkbox" className='flex gap-2'>

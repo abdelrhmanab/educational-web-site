@@ -1,14 +1,16 @@
-import React from 'react'
 
 import HeroBg from "../../assets/eventsbackground7.jpg"
 
-
+import type { BlogType } from '../../data/blog_Data'
 import { LuClock10 } from "react-icons/lu";
 import { IoEyeOutline } from "react-icons/io5";
 
+type Props = {
+    blog: BlogType
+}
 
-const HeroSecBlog = ({blog}) => {
-  return (
+const HeroSecBlog = ({ blog }: Props) => {
+    return (
         <div className="w-full bg-repeat bg-cover
          px-4 lg:px-16 py-5 lg:py-36 flex flex-col
           justify-center text-white gap-4 lg:gap-8 "
@@ -25,7 +27,7 @@ const HeroSecBlog = ({blog}) => {
             </div>
 
         </div>
-  )
+    )
 }
 
 export default HeroSecBlog

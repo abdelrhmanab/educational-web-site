@@ -1,4 +1,3 @@
-import React from 'react'
 import { BiAlignMiddle, BiSolidGrid } from 'react-icons/bi'
 import { IoMdList } from 'react-icons/io'
 import { Link } from 'react-router-dom'

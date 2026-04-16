@@ -1,7 +1,5 @@
 
 
-import React from 'react'
-
 import { useLocation , Link } from 'react-router-dom'
 
 import BG from "../assets/bgcontant.jpg"

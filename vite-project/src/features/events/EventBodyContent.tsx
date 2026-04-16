@@ -1,11 +1,10 @@
 
-import React from 'react'
 
 
 import AboutEvent from './AboutEvent';
 import EventSideBar from './EventSideBar';
 
-import type { EventType } from "./types";
+import type { EventType } from "../../types/eventType";
 
 type Prop = {
     event: EventType

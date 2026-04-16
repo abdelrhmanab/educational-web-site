@@ -1,4 +1,3 @@
-import React from 'react'
 
 import Avatat1 from "../../assets/AttendeeList1.png"
 import Avatat2 from "../../assets/AttendeeList2.png"

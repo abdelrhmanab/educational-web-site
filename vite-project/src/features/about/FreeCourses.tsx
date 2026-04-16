@@ -1,7 +1,6 @@
-import React from 'react'
+
 
 import ImamgBg from "../../assets/WhatsAppImagePM.jpeg"
-import PrimaryButton from '../../components/MainButton'
 import { FaArrowRight } from "react-icons/fa6";
 
 const FreeCoures = () => {

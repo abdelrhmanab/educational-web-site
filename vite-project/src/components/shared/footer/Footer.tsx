@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import Logo from "../../../assets/logofooter.png"
 import { MdAddIcCall, MdOutlineMailOutline } from "react-icons/md";

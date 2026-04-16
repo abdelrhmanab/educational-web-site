@@ -1,8 +1,8 @@
-import React, { useState, useRef, ReactNode } from "react";
+import React, { useState, useRef } from "react";
 
 type HoverPopoverProps = {
-  children: ReactNode;
-  content: ReactNode;
+  children: React.ReactNode;
+  content: React.ReactNode;
   delay?: number;
 };
 

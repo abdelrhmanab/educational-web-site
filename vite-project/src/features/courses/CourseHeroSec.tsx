@@ -1,13 +1,15 @@
-import React from 'react';
 
 import HeroBg from "../../assets/course-bannerbackGround.jpg"
 
-import { IoCalendarClearOutline } from "react-icons/io5";
 import { IoMdTime } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
 
 
-const CourseHeroSec = ({ course }) => {
+type CourseProps = {
+    course: any
+}
+
+const CourseHeroSec = ({ course }: CourseProps) => {
 
     return (
         <div className="w-full bg-repeat bg-cover
