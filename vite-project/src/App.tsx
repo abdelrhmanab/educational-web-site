@@ -19,6 +19,7 @@ import CoursesSidbar from './pages/courses/coursesSidbar'
 import ContactPage from './pages/ContactPage'
 import BlogPage from './pages/blog/Blog'
 import SingleBlog from './pages/blog/SingleBlog'
+import LoaderPage from './components/LoaderPage'
 
 const App = () => {
 
@@ -51,8 +52,9 @@ const App = () => {
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/blog/:id' element={<SingleBlog />} />
 
-
+        <Route path='/loader' element={<LoaderPage />} />
         <Route path='*' element={<Page404 />} />
+
       </Route>
     </Routes>
   </>)
