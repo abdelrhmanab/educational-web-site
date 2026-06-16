@@ -1,65 +1,73 @@
+import { FaDollarSign } from "react-icons/fa";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { GiShoppingBag } from "react-icons/gi";
 import { LuUserPlus, LuUserRoundCheck } from "react-icons/lu";
+import { MdOutlinePayment, MdShoppingCart } from "react-icons/md";
 import { PiClockUserFill } from "react-icons/pi";
+import { RiExchangeFundsLine } from "react-icons/ri";
 import { TbUsers } from "react-icons/tb";
 
 const overViewList = {
-    totalClients: 182450,
-    newClients: 1437,
-    totalProducts: 647,
-    Stocks: 12854
+    totalClients: 42300,
+    newClients: 7850,
+    totalProducts: 12647,
+    Stocks: '36.2%'
 }
 
 
 
 
-const OverViewClients = () => {
+const OverViewSales = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" >
 
             <div className="p-4 flex flex-col gap-3 bg-[#1e1e1e] rounded-2xl shadow-2xl hover:-translate-y-2 hover:scale-105 transition duration-500">
                 <span className="text-sm text-gray-400 flex items-center gap-2 ">
-                    <TbUsers />
-                    Total client
+                    <FaDollarSign />
+                  Total Revenue
+
                 </span>
                 <p className="text-3xl text-white font-semibold flex items-center gap-2">
-                    <TbUsers />
+                    <FaDollarSign />
                     {overViewList.newClients}</p>
             </div>
 
             <div className="p-4 flex flex-col gap-3 bg-[#1e1e1e] rounded-2xl shadow-2xl hover:-translate-y-2 hover:scale-105 transition duration-500">
                 <span className="text-sm text-gray-400 flex items-center gap-2 ">
-                    <LuUserPlus />
-
-
-                    New Clients</span>
+                 <MdShoppingCart />
+                    Avg. Order Value
+                </span>
                 <p className="text-3xl text-white font-semibold flex items-center gap-2">
-                    <LuUserPlus />
+                    <FaDollarSign />
 
                     {overViewList.totalClients}</p>
             </div>
 
             <div className="p-4 flex flex-col gap-3 bg-[#1e1e1e] rounded-2xl shadow-2xl hover:-translate-y-2 hover:scale-105 transition duration-500">
                 <span className="text-sm text-gray-400 flex items-center gap-2 ">
-                    <LuUserRoundCheck />
+                    <MdOutlinePayment />
 
-                    Active Clients</span>
+
+                    Total Sales
+                </span>
                 <p className="text-3xl text-white font-semibold flex items-center gap-2">
-                    <LuUserRoundCheck />
+
 
                     {overViewList.totalProducts}</p>
             </div>
 
             <div className="p-4 flex flex-col gap-3 bg-[#1e1e1e] rounded-2xl shadow-2xl hover:-translate-y-2 hover:scale-105 transition duration-500">
                 <span className="text-sm text-gray-400 flex items-center gap-2 ">
-                    <PiClockUserFill />
+                    <FaArrowTrendUp />
 
-                    Returning Clients</span>
+
+                    Total Growth</span>
                 <p className="text-3xl text-white font-semibold flex items-center gap-2">
-                  <PiClockUserFill />
+
                     {overViewList.Stocks}</p>
             </div>
         </div>
     )
 }
 
-export default OverViewClients
+export default OverViewSales

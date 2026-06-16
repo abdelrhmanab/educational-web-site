@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import {usePathname} from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -20,7 +20,7 @@ import {
 } from "react-icons/fa";
 
 import { MdMessage, MdAttachMoney } from "react-icons/md";
-import { HiChevronDoubleRight, HiMiniXMark } from "react-icons/hi2";
+import { HiChevronDoubleRight } from "react-icons/hi2";
 
 type Tlink = {
     id: number,
@@ -67,27 +67,27 @@ export const linksList: Tlink[] = [
         id: 6,
         text: "Settings",
         icon: <IoSettingsSharp />,
-        link: '/settings'
+        link: '#'
 
     },
     {
         id: 7,
         text: "Messages",
         icon: <MdMessage />,
-        link: '/messages'
+        link: '#'
 
     },
     {
         id: 8,
         text: "Notifications",
         icon: <FaBell />,
-        link: '/notifications'
+        link: '#'
     },
     {
         id: 9,
         text: "Help",
         icon: <IoHelpCircle />,
-        link: '/help'
+        link: '#'
     },
 ];
 
@@ -98,12 +98,12 @@ const Sidebar = () => {
     const pathname = usePathname()
 
     return (
-        <aside className=" h-screen bg-[#1e1e1e] flex flex-col p-5 gap-8 ">
+        <aside className=" h-screen bg-[#1e1e1e] flex flex-col p-5 gap-5  ">
             <span
                 className="text-2xl p-1"
                 onClick={() => { setOpen(prev => !prev) }}
             >
-             
+
                 {
                     open ? <HiChevronDoubleRight />
                         : <GiHamburgerMenu />
@@ -119,8 +119,8 @@ const Sidebar = () => {
                     linksList.map(i =>
                         <Link
                             href={i.link}
-                            className={`flex items-center  gap-4 p-4 transition duration-200 hover:bg-[#2f2f2f] rounded-2xl ${pathname===i.link?'bg-[#2f2f2f]':''} `}
-                             key={i.id}>
+                            className={`flex items-center  gap-4 p-4 transition duration-200 hover:bg-[#2f2f2f] rounded-2xl ${pathname === i.link ? 'bg-[#2f2f2f]' : ''} `}
+                            key={i.id}>
                             <span className="text-xl">
                                 {i.icon}
                             </span>
@@ -144,8 +144,12 @@ const Sidebar = () => {
                 }
             </div>
 
-
-
+            {open &&
+                <button
+                    className="px-2 py-1 capitalize rounded-xl text-xl bg-red-500 text-white">
+                    log out
+                </button>
+            }
 
         </aside>
     )
